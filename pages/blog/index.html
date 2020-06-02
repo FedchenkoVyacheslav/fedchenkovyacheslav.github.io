@@ -323,6 +323,80 @@
         </div>
       </div>
     </main>
+    <div class="modal modal_close modal_register-js">
+      <div class="modal__content">
+        <form name="form-register" class="form form_modal">
+          <div class="form__row form__row_column">
+            <label class="form__label" for="form-email-register">Email <span class="form__label-star">*</span></label>
+            <input class="form__input form__input_register-js email-js" id="form-email-register" type="text" name="email">
+          </div>
+          <div class="form__row">
+            <div class="form__row-short form__row-short_2">
+              <label class="form__label form__label_2" for="form-name-register">Name <span class="form__label-star">*</span></label>
+              <input class="form__input name-js" id="form-name-register" type="text" name="name">
+            </div>
+            <div class="form__row-short">
+              <label class="form__label form__label_2" for="form-surname-register">Surname <span class="form__label-star">*</span></label>
+              <input class="form__input surname-js" id="form-surname-register" type="text" name="surname">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__row-short form__row-short_2">
+              <label class="form__label form__label_2" for="form-password-register">Password <span class="form__label-star">*</span></label>
+              <input class="form__input password-js" id="form-password-register" type="password" name="password">
+            </div>
+            <div class="form__row-short">
+              <label class="form__label form__label_2" for="form-password-repeat-register">Repeat password <span class="form__label-star">*</span></label>
+              <input class="form__input password-repeat-js" id="form-password-repeat-register" type="password" name="passwordRep">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__row-short form__row-short_2">
+              <label class="form__label form__label_2" for="form-location-register">Location <span class="form__label-star">*</span></label>
+              <input class="form__input location-js" id="form-location-register" type="text" name="location">
+            </div>
+            <div class="form__row-short">
+              <label class="form__label form__label_2" for="form-age-register">Age <span class="form__label-star">*</span></label>
+              <input class="form__input age-js" id="form-age-register" type="number" name="age">
+            </div>
+          </div>
+          <label class="form__checkbox-label">
+            <input class="form__checkbox hidden acceptbutton-js" type="checkbox" value="no" name="acceptbutton">
+            <span class="form__checkbox-indicator">Clicking on the button, you consent to the processing of your personal data.</span>
+          </label>
+          <button class="button form__submit-button button_modal" type="submit">Sign up</button>
+        </form>
+        <button type="button" class="modal__close modal__close_register-js">
+          <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" />
+            <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" />
+          </svg>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="modal modal_close modal_sing-in-js">
+      <div class="modal__content">
+        <form name="form-sing-in" class="form form_modal form_modal-sing-in">
+          <div class="form__row form__row_column">
+            <label class="form__label" for="form-email-sing-in">Email <span class="form__label-star">*</span></label>
+            <input class="form__input form__input_sing-in-js email-js" id="form-email-sing-in" type="text" name="email">
+          </div>
+          <div class="form__row form__row_column">
+            <label class="form__label" for="form-password-sing-in">Password <span class="form__label-star">*</span></label>
+            <input class="form__input password-js" id="form-password-sing-in" type="password" name="password">
+          </div>
+          <button class="button form__submit-button form__submit-button_2 button_white" type="submit">Log in</button>
+        </form>
+        <button type="button" class="modal__close modal__close_sing-in-js">
+          <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" />
+            <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" />
+          </svg>
+          </svg>
+        </button>
+      </div>
+    </div>
     <button class="top-button">
       <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="0.300781" y="12.5786" width="16.5512" height="3" rx="1.5" transform="rotate(-45 0.300781 12.5786)" fill="#070707"/>
@@ -362,33 +436,33 @@
 </footer>
 <div class="modal modal_close modal_message-js">
 	<div class="modal__content">
-		<form class="form form_modal" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+		<form name="form-message" class="form form_modal" >
 			<div class="form__row">
 				<div class="form__row-short form__row-short_2">
 					<label class="form__label form__label_2" for="form-name-send-message">What is your name? <span class="form__label-star">*</span></label>
-					<input class="form__input form__input_message-js" id="form-name-send-message" type="text" name="name">
+					<input class="form__input form__input_message-js name-js" id="form-name-send-message" type="text" name="name">
 				</div>
 				<div class="form__row-short">
 					<label class="form__label form__label_2" for="form-message-send-message">Message subject <span class="form__label-star">*</span></label>
-					<input class="form__input" id="form-message-send-message" type="text" name="message">
+					<input class="form__input message-js" id="form-message-send-message" type="text" name="message">
 				</div>
 			</div>
 			<div class="form__row">
 				<div class="form__row-short form__row-short_2">
 					<label class="form__label form__label_2" for="form-email-send-message">Your Email <span class="form__label-star">*</span></label>
-					<input class="form__input" id="form-email-send-message" type="email" name="email">
+					<input class="form__input email-js" id="form-email-send-message" type="text" name="email">
 				</div>
 				<div class="form__row-short">
 					<label class="form__label form__label_2" for="form-phone-send-message">Your mobile phone <span class="form__label-star">*</span></label>
-					<input class="form__input" id="form-phone-send-message" type="text" name="phone">
+					<input class="form__input phone-js" id="form-phone-send-message" type="tel" name="phone">
 				</div>
 			</div>
-			<div class="form__row">
+			<div class="form__row form__row_column">
 				<label class="form__label" for="form-discuss-send-message">What do you want to discuss with me?</label>
-				<textarea class="form__input form__input-message" id="form-discuss-send-message" name="message"></textarea>
+				<textarea class="form__input form__input-message messagetext-js" id="form-discuss-send-message" name="messagetext"></textarea>
 			</div>
 			<label class="form__checkbox-label">
-				<input class="form__checkbox hidden" type="checkbox" value="accept" name="accept-button">
+				<input class="form__checkbox hidden" type="checkbox" value="no" name="acceptbutton">
 				<span class="form__checkbox-indicator">Clicking on the button, you consent to the processing of your personal data.</span>
 			</label>
 			<button class="button form__submit-button button_modal" type="submit">Send</button>

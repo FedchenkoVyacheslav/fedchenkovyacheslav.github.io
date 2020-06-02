@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="../../common.css">
-		<link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="./style.css">
 		<link rel="stylesheet" href="/static/fonts/gilroy.css" />
     <link rel="shortcut icon" href="../../static/images/favicon.ico"/>
     <title>My personal portfolio.</title>
@@ -52,55 +53,56 @@
           <h1 class="presentation__title">Antonina Antoninovna</h1>
           <p class="presentation__text">Future front-end developer 23 years old, Tolyatti</p>
         </div>
-        <div class="presentation__slider">
-          <picture class="presentation__img-box">
-            <source srcset="../../static/images/my_photo-mobile.jpg, ../../static/images/my_photo-mobile@2.jpg 2x" media="(max-width: 700px)">
-            <source srcset="../../static/images/my_photo-tablet.jpg, ../../static/images/my_photo-tablet@2.jpg 2x" media="(max-width: 850px)">
-            <source srcset="../../static/images/my_photo.jpg, ../../static/images/my_photo@2.jpg 2x">
-            <img class="presentation__img" src="../../static/images/my_photo.jpg" width="1000" height="465" alt="My photo"/>
-          </picture>
-          <div class="presentation__selector">
-            <button class="presentation__selector-btn presentation__selector-btn_back">
+        <div class="slider">
+          <div class="slider__wrapper">
+            <div class="slider__inner-wrapper">
+              <div class="slider__slide">
+                <picture class="slider__img-box">
+                  <source srcset="../../static/images/my_photo1-mobile.jpg, ../../static/images/my_photo1-mobile@2.jpg 2x" media="(max-width: 700px)">
+                  <source srcset="../../static/images/my_photo1-tablet.jpg, ../../static/images/my_photo1-tablet@2.jpg 2x" media="(max-width: 850px)">
+                  <source srcset="../../static/images/my_photo1.jpg, ../../static/images/my_photo1@2.jpg 2x">
+                  <img class="slider__img" src="../../static/images/my_photo1.jpg" width="1000" height="465" alt="My photo"/>
+                </picture>
+              </div>
+              <div class="slider__slide">
+                <picture class="slider__img-box">
+                  <source srcset="../../static/images/my_photo2-mobile.jpg, ../../static/images/my_photo2-mobile@2.jpg 2x" media="(max-width: 700px)">
+                  <source srcset="../../static/images/my_photo2-tablet.jpg, ../../static/images/my_photo2-tablet@2.jpg 2x" media="(max-width: 850px)">
+                  <source srcset="../../static/images/my_photo2.jpg, ../../static/images/my_photo2@2.jpg 2x">
+                  <img class="slider__img" src="../../static/images/my_photo2.jpg" width="1000" height="465" alt="My photo"/>
+                </picture>
+              </div>
+              <div class="slider__slide">
+                <picture class="slider__img-box">
+                  <source srcset="../../static/images/my_photo3-mobile.jpg, ../../static/images/my_photo3-mobile@2.jpg 2x" media="(max-width: 700px)">
+                  <source srcset="../../static/images/my_photo3-tablet.jpg, ../../static/images/my_photo3-tablet@2.jpg 2x" media="(max-width: 850px)">
+                  <source srcset="../../static/images/my_photo3.jpg, ../../static/images/my_photo3@2.jpg 2x">
+                  <img class="slider__img" src="../../static/images/my_photo3.jpg" width="1000" height="465" alt="My photo"/>
+                </picture>
+              </div>
+              <div class="slider__slide">
+                <picture class="slider__img-box">
+                  <source srcset="../../static/images/my_photo4-mobile.jpg, ../../static/images/my_photo4-mobile@2.jpg 2x" media="(max-width: 700px)">
+                  <source srcset="../../static/images/my_photo4-tablet.jpg, ../../static/images/my_photo4-tablet@2.jpg 2x" media="(max-width: 850px)">
+                  <source srcset="../../static/images/my_photo4.jpg, ../../static/images/my_photo4@2.jpg 2x">
+                  <img class="slider__img" src="../../static/images/my_photo4.jpg" width="1000" height="465" alt="My photo"/>
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="slider__bottom-panel">
+            <button class="slider__button slider__button_back">
               <svg width="15" height="24" viewBox="0 0 15 24" xmlns="http://www.w3.org/2000/svg">
                 <rect x="12.5791" y="23.6992" width="16.5512" height="3" rx="1.5" transform="rotate(-135 12.5791 23.6992)" />
                 <rect x="14.7002" y="2.41992" width="16.5512" height="3" rx="1.5" transform="rotate(135 14.7002 2.41992)" />
-              </svg>                
+              </svg>  
             </button>
-            <ul class="presentation__selector-pages list-point-none">
-              <li class="presentation__selector-item presentation__selector-item_active">
-                <button class="presentation__selector-btn-middle">
-                  <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="5" cy="5.00006" r="5" />
-                  </svg>
-                </button>     
-              </li>
-              <li class="presentation__selector-item">
-                <button class="presentation__selector-btn-middle">
-                  <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="5" cy="5.00006" r="5" />
-                  </svg>
-                </button>
-              </li>
-              <li class="presentation__selector-item">
-                <button class="presentation__selector-btn-middle">
-                  <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="5" cy="5.00006" r="5" />
-                  </svg>
-                </button>
-              </li>
-              <li class="presentation__selector-item">
-                <button class="presentation__selector-btn-middle">
-                  <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="5" cy="5.00006" r="5" />
-                  </svg>
-                </button>
-              </li>
-            </ul>
-            <button class="presentation__selector-btn presentation__selector-btn_forward">
+            <div class="slider__pagination"></div>
+            <button class="slider__button slider__button_next">
               <svg width="15" height="24" viewBox="0 0 15 24" xmlns="http://www.w3.org/2000/svg">
                 <rect x="2.42139" y="0.300781" width="16.5512" height="3" rx="1.5" transform="rotate(45 2.42139 0.300781)" />
                 <rect x="0.300049" y="21.5801" width="16.5512" height="3" rx="1.5" transform="rotate(-45 0.300049 21.5801)" />
-              </svg>                                                       
+              </svg>   
             </button>
           </div>
         </div>
@@ -200,72 +202,132 @@
       <section class="portfolio">
         <div class="portfolio__content container">
           <h2 class="portfolio__title">Portfolio</h2>
-          <div class="portfolio__img-box">
-            <picture class="portfolio__img-box">
-              <source srcset="../../static/images/Portfolio-mobile.jpg, ../../static/images/Portfolio-mobile@2.jpg 2x" media="(max-width: 700px)">
-              <source srcset="../../static/images/Portfolio-tablet.jpg, ../../static/images/Portfolio-tablet@2.jpg 2x" media="(max-width: 850px)">
-              <source srcset="../../static/images/Portfolio.jpg, ../../static/images/Portfolio@2.jpg 2x">
-              <img class="portfolio__img" src="../../static/images/Portfolio.jpg" width="1000" height="604" alt="Portfolio"/>
-            </picture>
-            <button class="portfolio__btn portfolio__btn_back">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture class="portfolio__img-box">
+                    <source srcset="../../static/images/Portfolio1-mobile.jpg, ../../static/images/Portfolio1-mobile@2.jpg 2x" media="(max-width: 700px)">
+                    <source srcset="../../static/images/Portfolio1-tablet.jpg, ../../static/images/Portfolio1-tablet@2.jpg 2x" media="(max-width: 850px)">
+                    <source srcset="../../static/images/Portfolio1.jpg, ../../static/images/Portfolio1@2.jpg 2x">
+                    <img class="portfolio__img" src="../../static/images/Portfolio1.jpg" width="1000" height="604" alt="Portfolio"/>
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="portfolio__img-box">
+                    <source srcset="../../static/images/Portfolio2-mobile.jpg, ../../static/images/Portfolio2-mobile@2.jpg 2x" media="(max-width: 700px)">
+                    <source srcset="../../static/images/Portfolio2-tablet.jpg, ../../static/images/Portfolio2-tablet@2.jpg 2x" media="(max-width: 850px)">
+                    <source srcset="../../static/images/Portfolio2.jpg, ../../static/images/Portfolio2@2.jpg 2x">
+                    <img class="portfolio__img" src="../../static/images/Portfolio2.jpg" width="1000" height="604" alt="Portfolio"/>
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="portfolio__img-box">
+                    <source srcset="../../static/images/Portfolio3-mobile.jpg, ../../static/images/Portfolio3-mobile@2.jpg 2x" media="(max-width: 700px)">
+                    <source srcset="../../static/images/Portfolio3-tablet.jpg, ../../static/images/Portfolio3-tablet@2.jpg 2x" media="(max-width: 850px)">
+                    <source srcset="../../static/images/Portfolio3.jpg, ../../static/images/Portfolio3@2.jpg 2x">
+                    <img class="portfolio__img" src="../../static/images/Portfolio3.jpg" width="1000" height="604" alt="Portfolio"/>
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="portfolio__img-box">
+                    <source srcset="../../static/images/Portfolio4-mobile.jpg, ../../static/images/Portfolio4-mobile@2.jpg 2x" media="(max-width: 700px)">
+                    <source srcset="../../static/images/Portfolio4-tablet.jpg, ../../static/images/Portfolio4-tablet@2.jpg 2x" media="(max-width: 850px)">
+                    <source srcset="../../static/images/Portfolio4.jpg, ../../static/images/Portfolio4@2.jpg 2x">
+                    <img class="portfolio__img" src="../../static/images/Portfolio4.jpg" width="1000" height="604" alt="Portfolio"/>
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="portfolio__img-box">
+                    <source srcset="../../static/images/Portfolio5-mobile.jpg, ../../static/images/Portfolio5-mobile@2.jpg 2x" media="(max-width: 700px)">
+                    <source srcset="../../static/images/Portfolio5-tablet.jpg, ../../static/images/Portfolio5-tablet@2.jpg 2x" media="(max-width: 850px)">
+                    <source srcset="../../static/images/Portfolio5.jpg, ../../static/images/Portfolio5@2.jpg 2x">
+                    <img class="portfolio__img" src="../../static/images/Portfolio5.jpg" width="1000" height="604" alt="Portfolio"/>
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="portfolio__img-box">
+                    <source srcset="../../static/images/Portfolio6-mobile.jpg, ../../static/images/Portfolio6-mobile@2.jpg 2x" media="(max-width: 700px)">
+                    <source srcset="../../static/images/Portfolio6-tablet.jpg, ../../static/images/Portfolio6-tablet@2.jpg 2x" media="(max-width: 850px)">
+                    <source srcset="../../static/images/Portfolio6.jpg, ../../static/images/Portfolio6@2.jpg 2x">
+                    <img class="portfolio__img" src="../../static/images/Portfolio6.jpg" width="1000" height="604" alt="Portfolio"/>
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="portfolio__img-box">
+                    <source srcset="../../static/images/Portfolio7-mobile.jpg, ../../static/images/Portfolio7-mobile@2.jpg 2x" media="(max-width: 700px)">
+                    <source srcset="../../static/images/Portfolio7-tablet.jpg, ../../static/images/Portfolio7-tablet@2.jpg 2x" media="(max-width: 850px)">
+                    <source srcset="../../static/images/Portfolio7.jpg, ../../static/images/Portfolio7@2.jpg 2x">
+                    <img class="portfolio__img" src="../../static/images/Portfolio7.jpg" width="1000" height="604" alt="Portfolio"/>
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="portfolio__img-box">
+                    <source srcset="../../static/images/Portfolio8-mobile.jpg, ../../static/images/Portfolio8-mobile@2.jpg 2x" media="(max-width: 700px)">
+                    <source srcset="../../static/images/Portfolio8-tablet.jpg, ../../static/images/Portfolio8-tablet@2.jpg 2x" media="(max-width: 850px)">
+                    <source srcset="../../static/images/Portfolio8.jpg, ../../static/images/Portfolio8@2.jpg 2x">
+                    <img class="portfolio__img" src="../../static/images/Portfolio8.jpg" width="1000" height="604" alt="Portfolio"/>
+                  </picture>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
               <svg width="43" height="61" viewBox="0 0 43 61" xmlns="http://www.w3.org/2000/svg">
                 <rect x="30.1641" y="52" width="29.9303" height="5.42502" rx="2.71251" transform="rotate(-135 30.1641 52)" />
                 <rect x="34" y="13.5198" width="29.9303" height="5.42502" rx="2.71251" transform="rotate(135 34 13.5198)" />
-              </svg>                                                 
-            </button>
-            <button class="portfolio__btn portfolio__btn_forward">
+              </svg>  
+            </div>
+            <div class="swiper-button-next">
               <svg width="43" height="61" viewBox="0 0 43 61" xmlns="http://www.w3.org/2000/svg">
                 <rect x="12.8359" y="9" width="29.9303" height="5.42502" rx="2.71251" transform="rotate(45 12.8359 9)" />
                 <rect x="9" y="47.4802" width="29.9303" height="5.42502" rx="2.71251" transform="rotate(-45 9 47.4802)" />
               </svg>
-            </button>
-            <div class="portfolio__footer">
-              <a class="portfolio__footer-link" target="_blank" href="https://fedchenkovyacheslav.github.io/project">Learning site for DL Academy courses</a>
-              <p class="portfolio__footer-text">A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>
             </div>
-          </div>
+            <div class="swiper-footer">
+              <a class="swiper-footer-link" target="_blank" href="https://fedchenkovyacheslav.github.io/project">Learning site for DL Academy courses</a>
+              <p class="swiper-footer-text">A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>
+            </div>
+        </div>
         </div>
       </section>
     </main>
     <div class="modal modal_close modal_register-js">
       <div class="modal__content">
-        <form class="form form_modal" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
-          <div class="form__row">
+        <form name="form-register" class="form form_modal">
+          <div class="form__row form__row_column">
             <label class="form__label" for="form-email-register">Email <span class="form__label-star">*</span></label>
-            <input class="form__input form__input_register-js" id="form-email-register" type="email" name="email">
+            <input class="form__input form__input_register-js email-js" id="form-email-register" type="text" name="email">
           </div>
           <div class="form__row">
             <div class="form__row-short form__row-short_2">
               <label class="form__label form__label_2" for="form-name-register">Name <span class="form__label-star">*</span></label>
-              <input class="form__input" id="form-name-register" type="text" name="name">
+              <input class="form__input name-js" id="form-name-register" type="text" name="name">
             </div>
             <div class="form__row-short">
               <label class="form__label form__label_2" for="form-surname-register">Surname <span class="form__label-star">*</span></label>
-              <input class="form__input" id="form-surname-register" type="text" name="surname">
+              <input class="form__input surname-js" id="form-surname-register" type="text" name="surname">
             </div>
           </div>
           <div class="form__row">
             <div class="form__row-short form__row-short_2">
               <label class="form__label form__label_2" for="form-password-register">Password <span class="form__label-star">*</span></label>
-              <input class="form__input" id="form-password-register" type="password" name="password">
+              <input class="form__input password-js" id="form-password-register" type="password" name="password">
             </div>
             <div class="form__row-short">
               <label class="form__label form__label_2" for="form-password-repeat-register">Repeat password <span class="form__label-star">*</span></label>
-              <input class="form__input" id="form-password-repeat-register" type="password" name="password">
+              <input class="form__input password-repeat-js" id="form-password-repeat-register" type="password" name="passwordRep">
             </div>
           </div>
           <div class="form__row">
             <div class="form__row-short form__row-short_2">
               <label class="form__label form__label_2" for="form-location-register">Location <span class="form__label-star">*</span></label>
-              <input class="form__input" id="form-location-register" type="text" name="location">
+              <input class="form__input location-js" id="form-location-register" type="text" name="location">
             </div>
             <div class="form__row-short">
               <label class="form__label form__label_2" for="form-age-register">Age <span class="form__label-star">*</span></label>
-              <input class="form__input" id="form-age-register" type="text" name="age">
+              <input class="form__input age-js" id="form-age-register" type="number" name="age">
             </div>
           </div>
           <label class="form__checkbox-label">
-            <input class="form__checkbox hidden" type="checkbox" value="accept" name="accept-button">
+            <input class="form__checkbox hidden acceptbutton-js" type="checkbox" value="no" name="acceptbutton">
             <span class="form__checkbox-indicator">Clicking on the button, you consent to the processing of your personal data.</span>
           </label>
           <button class="button form__submit-button button_modal" type="submit">Sign up</button>
@@ -281,14 +343,14 @@
     </div>
     <div class="modal modal_close modal_sing-in-js">
       <div class="modal__content">
-        <form class="form form_modal form_modal-sing-in" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
-          <div class="form__row">
+        <form name="form-sing-in" class="form form_modal form_modal-sing-in">
+          <div class="form__row form__row_column">
             <label class="form__label" for="form-email-sing-in">Email <span class="form__label-star">*</span></label>
-            <input class="form__input form__input_sing-in-js" id="form-email-sing-in" type="email" name="email">
+            <input class="form__input form__input_sing-in-js email-js" id="form-email-sing-in" type="text" name="email">
           </div>
-          <div class="form__row">
+          <div class="form__row form__row_column">
             <label class="form__label" for="form-password-sing-in">Password <span class="form__label-star">*</span></label>
-            <input class="form__input" id="form-password-sing-in" type="password" name="password">
+            <input class="form__input password-js" id="form-password-sing-in" type="password" name="password">
           </div>
           <button class="button form__submit-button form__submit-button_2 button_white" type="submit">Log in</button>
         </form>
@@ -307,7 +369,7 @@
         <rect x="21.5801" y="14.7" width="16.5512" height="3" rx="1.5" transform="rotate(-135 21.5801 14.7)" fill="#070707"/>
       </svg>                      
     </button>
-    <footer class="footer footer_2">
+    <footer class="footer">
 	<div class="footer__content container">
 		<div class="footer__content">
 			<h2 class="footer__title">Contacts</h2>
@@ -340,33 +402,33 @@
 </footer>
 <div class="modal modal_close modal_message-js">
 	<div class="modal__content">
-		<form class="form form_modal" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+		<form name="form-message" class="form form_modal" >
 			<div class="form__row">
 				<div class="form__row-short form__row-short_2">
 					<label class="form__label form__label_2" for="form-name-send-message">What is your name? <span class="form__label-star">*</span></label>
-					<input class="form__input form__input_message-js" id="form-name-send-message" type="text" name="name">
+					<input class="form__input form__input_message-js name-js" id="form-name-send-message" type="text" name="name">
 				</div>
 				<div class="form__row-short">
 					<label class="form__label form__label_2" for="form-message-send-message">Message subject <span class="form__label-star">*</span></label>
-					<input class="form__input" id="form-message-send-message" type="text" name="message">
+					<input class="form__input message-js" id="form-message-send-message" type="text" name="message">
 				</div>
 			</div>
 			<div class="form__row">
 				<div class="form__row-short form__row-short_2">
 					<label class="form__label form__label_2" for="form-email-send-message">Your Email <span class="form__label-star">*</span></label>
-					<input class="form__input" id="form-email-send-message" type="email" name="email">
+					<input class="form__input email-js" id="form-email-send-message" type="text" name="email">
 				</div>
 				<div class="form__row-short">
 					<label class="form__label form__label_2" for="form-phone-send-message">Your mobile phone <span class="form__label-star">*</span></label>
-					<input class="form__input" id="form-phone-send-message" type="text" name="phone">
+					<input class="form__input phone-js" id="form-phone-send-message" type="tel" name="phone">
 				</div>
 			</div>
-			<div class="form__row">
+			<div class="form__row form__row_column">
 				<label class="form__label" for="form-discuss-send-message">What do you want to discuss with me?</label>
-				<textarea class="form__input form__input-message" id="form-discuss-send-message" name="message"></textarea>
+				<textarea class="form__input form__input-message messagetext-js" id="form-discuss-send-message" name="messagetext"></textarea>
 			</div>
 			<label class="form__checkbox-label">
-				<input class="form__checkbox hidden" type="checkbox" value="accept" name="accept-button">
+				<input class="form__checkbox hidden" type="checkbox" value="no" name="acceptbutton">
 				<span class="form__checkbox-indicator">Clicking on the button, you consent to the processing of your personal data.</span>
 			</label>
 			<button class="button form__submit-button button_modal" type="submit">Send</button>
@@ -380,6 +442,7 @@
 		</button>
 	</div>
 </div>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
