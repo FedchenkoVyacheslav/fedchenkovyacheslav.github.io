@@ -49,237 +49,75 @@
     <main>
       <div class="container">
         <h1 class="title__site">My blog</h1>
-        <form class="filter" name="product filter" method="get">
+        <form class="filter" name="filterForm" method="get">
           <fieldset class="filter__tag filter__fieldset">
             <legend class="filter__legend">Tags</legend>
-              <label class="filter__checkbox-label">
-                <input class="filter__form-checkbox hidden" type="checkbox" name="tag" checked>
-                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_2 filter__form-checkbox-indicator_tag-1"></span>
-              </label>
-              <label class="filter__checkbox-label">
-                <input class="filter__form-checkbox hidden" type="checkbox" name="tag">
-                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_2 filter__form-checkbox-indicator_tag-2"></span>
-              </label>
-              <label class="filter__checkbox-label">
-                <input class="filter__form-checkbox hidden" type="checkbox" name="tag">
-                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_2 filter__form-checkbox-indicator_tag-3"></span>
-              </label>
-              <label class="filter__checkbox-label">
-                <input class="filter__form-checkbox hidden" type="checkbox" name="tag">
-                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_2 filter__form-checkbox-indicator_tag-4"></span>
-              </label>
-              <label class="filter__checkbox-label">
-                <input class="filter__form-checkbox hidden" type="checkbox" name="tag" >
-                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_2 filter__form-checkbox-indicator_tag-5"></span>
-              </label>
-              <label class="filter__checkbox-label">
-                <input class="filter__form-checkbox hidden" type="checkbox" name="tag" checked>
-                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_2 filter__form-checkbox-indicator_tag-6"></span>
-              </label>
-              <label class="filter__checkbox-label">
-                <input class="filter__form-checkbox hidden" type="checkbox" name="tag">
-                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_2 filter__form-checkbox-indicator_tag-7"></span>
-              </label>
-              <label class="filter__checkbox-label">
-                <input class="filter__form-checkbox hidden" type="checkbox" name="tag">
-                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_2 filter__form-checkbox-indicator_tag-8"></span>
-              </label>
           </fieldset>
           <fieldset class="filter__views filter__fieldset">
             <legend class="filter__legend">Views</legend>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="more 100" name="views">
+                <input class="filter__form-radio hidden" type="radio" value="100" name="views" checked>
                 <span class="filter__form-radio-indicator">more 100</span>
               </label>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="more 500" name="views" checked>
+                <input class="filter__form-radio hidden" type="radio" value="500" name="views">
                 <span class="filter__form-radio-indicator">more 500</span>
               </label>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="more 1000" name="views" >
+                <input class="filter__form-radio hidden" type="radio" value="1000" name="views">
                 <span class="filter__form-radio-indicator">more 1000</span>
               </label>
           </fieldset>
           <fieldset class="filter__comments filter__fieldset">
             <legend class="filter__legend">Comments</legend>
               <label class="filter__checkbox-label">
-                <input class="filter__form-checkbox hidden" type="checkbox" value="not a single" name="comments" checked>
+                <input class="filter__form-checkbox hidden" type="checkbox" value="0-0" name="commentsCount">
                 <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_main">not a single </span>
               </label>
               <label class="filter__checkbox-label">
-                <input class="filter__form-checkbox hidden" type="checkbox" value="more 1" name="comments">
+                <input class="filter__form-checkbox hidden" type="checkbox" value="1-50" name="commentsCount">
                 <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_main">more 1</span>
               </label>
               <label class="filter__checkbox-label">
-                <input class="filter__form-checkbox hidden" type="checkbox" value="more 50" name="comments">
+                <input class="filter__form-checkbox hidden" type="checkbox" value="50-999999" name="commentsCount">
                 <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_main">more 50</span>
               </label>
           </fieldset>
           <fieldset class="filter__how-show filter__fieldset">
             <legend class="filter__legend">How show?</legend>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="show 5" name="how-show" checked>
+                <input class="filter__form-radio hidden" type="radio" value="5" name="howShow" checked>
                 <span class="filter__form-radio-indicator">show 5</span>
               </label>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="show 10" name="how-show" >
+                <input class="filter__form-radio hidden" type="radio" value="10" name="howShow" >
                 <span class="filter__form-radio-indicator">show 10</span>
               </label>
           </fieldset>
           <fieldset class="filter__sort-by filter__fieldset">
             <legend class="filter__legend">Sort by</legend>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="date" name="sort-by" checked>
+                <input class="filter__form-radio hidden" type="radio" value="date" name="sortBy" checked>
                 <span class="filter__form-radio-indicator">date</span>
               </label>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="title" name="sort-by" >
+                <input class="filter__form-radio hidden" type="radio" value="title" name="sortBy" >
                 <span class="filter__form-radio-indicator">title</span>
               </label>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="views" name="sort-by" >
+                <input class="filter__form-radio hidden" type="radio" value="views" name="sortBy" >
                 <span class="filter__form-radio-indicator">views</span>
               </label>
           </fieldset>
-          <button class="button filter__reset-button button_white" type="submit">Apply</button>
+          <button class="button filter__reset-button button_white" type="reset">Apply</button>
           <fieldset class="filter__form filter__fieldset">
-            <label class="filter__form-label" for="filter-email">
-              <input type="email" class="filter__form-input" id="filter-email"/>
+            <label class="filter__form-label" for="filter-search">
+              <input type="text" class="filter__form-input" id="filter-search" name="search"/>
             </label>
             <button class="button filter__form-button button_white" type="submit">Search</button>
           </fieldset>
         </form>
         <ul class="blog list-point-none">
-          <li class="blog__item">
-            <picture class="blog__img-box">
-              <source srcset="../../static/images/Blog1-mobile.jpg, ../../static/images/Blog1-mobile@2.jpg 2x" media="(max-width: 700px)">
-              <source srcset="../../static/images/Blog1-tablet.jpg, ../../static/images/Blog1-tablet@2.jpg 2x" media="(max-width: 850px)">
-              <source srcset="../../static/images/Blog1.jpg, ../../static/images/Blog1@2.jpg 2x">
-              <img class="blog__img" src="../../static/images/Blog.jpg" width="320" height="236" alt="Blog photo"/>
-            </picture>
-            <div class="blog__content">
-              <ul class="blog__tag-list list-point-none">
-                <li class="blog__tag blog__tag_1"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_2"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_3"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_4"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_5"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_6"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_7"></li>
-                <li class="blog__tag blog__tag_8"></li>
-              </ul>
-              <span class="blog__date blog__info">20.01.2020</span>
-              <span class="blog__views blog__info">223 views</span>
-              <span class="blog__comments blog__info">97 comments</span>
-              <h2 class="blog__title">This is my new dog.</h2>
-              <p class="blog__text">Duis sit odio dui pretium suspendisse malesuada sit leo in. Massa nec eget etiam tellus ac. Sodales nibh pellentesque donec eu ultrices tortor condimentum massa.</p>
-              <a class="blog__link" href="#">Go to this post</a>
-            </div>
-          </li>
-          <li class="blog__item">
-            <picture class="blog__img-box">
-              <source srcset="../../static/images/Blog2-mobile.jpg, ../../static/images/Blog2-mobile@2.jpg 2x" media="(max-width: 700px)">
-              <source srcset="../../static/images/Blog2-tablet.jpg, ../../static/images/Blog2-tablet@2.jpg 2x" media="(max-width: 850px)">
-              <source srcset="../../static/images/Blog2.jpg, ../../static/images/Blog2@2.jpg 2x">
-              <img class="blog__img" src="../../static/images/Blog.jpg" width="320" height="236" alt="Blog photo"/>
-            </picture>
-            <div class="blog__content">
-              <ul class="blog__tag-list list-point-none">
-                <li class="blog__tag blog__tag_hidden blog__tag_1"></li>
-                <li class="blog__tag blog__tag_2"></li>
-                <li class="blog__tag blog__tag_3"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_4"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_5"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_6"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_7"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_8"></li>
-              </ul>
-              <span class="blog__date blog__info">17.01.2020</span>
-              <span class="blog__views blog__info">12 views</span>
-              <span class="blog__comments blog__info">0 comments</span>
-              <h2 class="blog__title">Why do roosters scream in the morning?</h2>
-              <p class="blog__text">Erat nunc parturient feugiat egestas adipiscing erat eu. Non neque mi volutpat et lectus.</p>
-              <a class="blog__link" href="#">Go to this post</a>
-            </div>
-          </li>
-          <li class="blog__item">
-            <picture class="blog__img-box">
-              <source srcset="../../static/images/Blog3-mobile.jpg, ../../static/images/Blog3-mobile@2.jpg 2x" media="(max-width: 700px)">
-              <source srcset="../../static/images/Blog3-tablet.jpg, ../../static/images/Blog3-tablet@2.jpg 2x" media="(max-width: 850px)">
-              <source srcset="../../static/images/Blog3.jpg, ../../static/images/Blog3@2.jpg 2x">
-              <img class="blog__img" src="../../static/images/Blog.jpg" width="320" height="236" alt="Blog photo"/>
-            </picture>
-            <div class="blog__content">
-              <ul class="blog__tag-list list-point-none">
-                <li class="blog__tag blog__tag_hidden blog__tag_1"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_2"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_3"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_4"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_5"></li>
-                <li class="blog__tag blog__tag_6"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_7"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_8"></li>
-              </ul>
-              <span class="blog__date blog__info">17.01.2020</span>
-              <span class="blog__views blog__info">337 views</span>
-              <span class="blog__comments blog__info">48 comments</span>
-              <h2 class="blog__title">Kangaroo. Start.</h2>
-              <p class="blog__text">At leo at nisl tortor egestas. Mauris luctus est luctus massa tellus erat gravida. Eget aenean eget diam habitant risus. Dapibus et, nec platea felis. Facilisi ut leo arcu, semper id pellentesque quisque ultrices etiam.</p>
-              <a class="blog__link" href="#">Go to this post</a>
-            </div>
-          </li>
-          <li class="blog__item">
-            <picture class="blog__img-box">
-              <source srcset="../../static/images/Blog4-mobile.jpg, ../../static/images/Blog4-mobile@2.jpg 2x" media="(max-width: 700px)">
-              <source srcset="../../static/images/Blog4-tablet.jpg, ../../static/images/Blog4-tablet@2.jpg 2x" media="(max-width: 850px)">
-              <source srcset="../../static/images/Blog4.jpg, ../../static/images/Blog4@2.jpg 2x">
-              <img class="blog__img" src="../../static/images/Blog.jpg" width="320" height="236" alt="Blog photo"/>
-            </picture>
-            <div class="blog__content">
-              <ul class="blog__tag-list list-point-none">
-                <li class="blog__tag blog__tag_1"></li>
-                <li class="blog__tag blog__tag_2"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_3"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_4"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_5"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_6"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_7"></li>
-                <li class="blog__tag blog__tag_8"></li>
-              </ul>
-              <span class="blog__date blog__info">15.01.2020</span>
-              <span class="blog__views blog__info">222 views</span>
-              <span class="blog__comments blog__info">14 comments</span>
-              <h2 class="blog__title">Met a duckling at the pond.</h2>
-              <p class="blog__text">Nulla tempus mauris sed vel bibendum. Felis urna suspendisse amet, laoreet sagittis. Semper pellentesque condimentum vitae morbi in dui. Et in et diam massa.</p>
-              <a class="blog__link" href="#">Go to this post</a>
-            </div>
-          </li>
-          <li class="blog__item">
-            <picture class="blog__img-box">
-              <source srcset="../../static/images/Blog5-mobile.jpg, ../../static/images/Blog5-mobile@2.jpg 2x" media="(max-width: 700px)">
-              <source srcset="../../static/images/Blog5-tablet.jpg, ../../static/images/Blog5-tablet@2.jpg 2x" media="(max-width: 850px)">
-              <source srcset="../../static/images/Blog5.jpg, ../../static/images/Blog5@2.jpg 2x">
-              <img class="blog__img" src="../../static/images/Blog.jpg" width="320" height="236" alt="Blog photo"/>
-            </picture>
-            <div class="blog__content">
-              <ul class="blog__tag-list list-point-none">
-                <li class="blog__tag blog__tag_hidden blog__tag_1"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_2"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_3"></li>
-                <li class="blog__tag blog__tag_4"></li>
-                <li class="blog__tag blog__tag_5"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_6"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_7"></li>
-                <li class="blog__tag blog__tag_hidden blog__tag_8"></li>
-              </ul>
-              <span class="blog__date blog__info">20.01.2020</span>
-              <span class="blog__views blog__info">122 views</span>
-              <span class="blog__comments blog__info">23 comments</span>
-              <h2 class="blog__title">Can dogs also be friends?</h2>
-              <p class="blog__text">Eu, libero aliquet nibh turpis quis nulla et ullamcorper purus. Consequat egestas sed sagittis morbi lacus. Consectetur et justo, sagittis vitae mi faucibus urna, eu. </p>
-              <a class="blog__link" href="#">Go to this post</a>
-            </div>
-          </li>
         </ul>
         <div class="selector">
           <button class="selector-btn selector-btn_back">
@@ -289,30 +127,6 @@
             </svg>                
           </button>
           <ul class="selector-pages list-point-none">
-            <li class="selector-item selector-item_active">
-              <button class="selector-btn-middle selector-btn-middle_active">1</button>     
-            </li>
-            <li class="selector-item">
-              <button class="selector-btn-middle">2</button>     
-            </li>
-            <li class="selector-item">
-              <button class="selector-btn-middle">3</button>     
-            </li>
-            <li class="selector-item">
-              <button class="selector-btn-middle">4</button>     
-            </li>
-            <li class="selector-item">
-              <button class="selector-btn-middle">5</button>     
-            </li>
-            <li class="selector-item">
-              <button class="selector-btn-middle">6</button>     
-            </li>
-            <li class="selector-item">
-              <button class="selector-btn-middle">7</button>     
-            </li>
-            <li class="selector-item">
-              <button class="selector-btn-middle">8</button>     
-            </li>
           </ul>
           <button class="selector-btn selector-btn_forward">
             <svg width="15" height="24" viewBox="0 0 15 24" xmlns="http://www.w3.org/2000/svg">
