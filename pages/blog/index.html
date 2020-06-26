@@ -14,12 +14,14 @@
   </head>
   <body>
     <header class="header header_2 container">
-  <a class="header__home-link header_hover" href="../../index.html">Home</a>
+  <a class="header__home-link header__hover" href="../../index.html">Home</a>
   <nav class="header__nav">
     <ul class="header__nav-list list-point-none">
-      <li><a class="header__nav-item header_hover" href="../../pages/blog/index.html">My blog</a></li>
-      <li><button class="header__nav-item header__sing-in-button header__sing-in-button_js header_hover">Sign in</button></li>
-      <li><button class="header__nav-item header__register-button header__register-button_js header_hover">Register</button></li>
+      <li><a class="header__nav-item header__active header__hover" href="../../pages/blog/index.html">My blog</a></li>
+      <li><button class="header__nav-item header__sing-in-button header__sing-in-button_js header__hover">Sign in</button></li>
+      <li><button class="header__nav-item header__register-button header__register-button_js header__hover">Register</button></li>
+      <li><a class="header__nav-item header__profile_js header__hover hidden-block" href="../../pages/profile/index.html">My profile</a></li>
+      <li><button class="header__nav-item header__sing-out-button header__sing-out-button_js hidden-block header__hover">Sign out</button></li>
     </ul>
   </nav>
   <button class="header__mobile-menu header__mobile-menu_js">
@@ -31,17 +33,19 @@
   </button>
   <div class="mobile-header">
     <div class="mobile-header__content">
-      <button class="mobile-header__button-close mobile-header__button-close_js header_hover">
+      <button class="mobile-header__button-close mobile-header__button-close_js header__hover">
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="3.37256" width="32" height="4" rx="2" transform="rotate(45 3.37256 0)" fill="#070707"/>
           <rect x="0.543945" y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0.543945 22.6289)" fill="#070707"/>
         </svg>          
       </button>
       <ul class="mobile-header__nav-list list-point-none">
-        <li><a class="mobile-header__nav-item mobile-header__nav-item_active header_hover" href="../../index.html">Home</a></li>
-        <li><a class="mobile-header__nav-item header_hover" href="../../pages/blog/index.html">My blog</a></li>
-        <li><button class="mobile-header__nav-item mobile-header__sing-in-button mobile-header__sing-in-button_js header_hover">Sign in</button></li>
-        <li><button class="mobile-header__nav-item mobile-header__register-button mobile-header__register-button_js header_hover">Register</button></li>
+        <li><a class="mobile-header__nav-item header__hover" href="../../index.html">Home</a></li>
+        <li><a class="mobile-header__nav-item mobile-header__nav-item_active header__hover" href="../../pages/blog/index.html">My blog</a></li>
+        <li><button class="mobile-header__nav-item mobile-header__sing-in-button mobile-header__sing-in-button_js header__hover">Sign in</button></li>
+        <li><button class="mobile-header__nav-item mobile-header__register-button mobile-header__register-button_js header__hover">Register</button></li>
+        <li><a class="mobile-header__nav-item mobile-header__profile_js header__hover hidden" href="../../pages/profile/index.html">My profile</a></li>
+        <li><button class="mobile-header__nav-item mobile-header__sing-out-button mobile-header__sing-out-button_js hidden header__hover">Sign out</button></li>
       </ul>
     </div>
   </div>
@@ -56,31 +60,31 @@
           <fieldset class="filter__views filter__fieldset">
             <legend class="filter__legend">Views</legend>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="100" name="views" checked>
-                <span class="filter__form-radio-indicator">more 100</span>
+                <input class="filter__form-radio hidden" type="radio" value="100-500" name="views" checked>
+                <span class="filter__form-radio-indicator">100-500</span>
               </label>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="500" name="views">
-                <span class="filter__form-radio-indicator">more 500</span>
+                <input class="filter__form-radio hidden" type="radio" value="500-1000" name="views">
+                <span class="filter__form-radio-indicator">500-1000</span>
               </label>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="1000" name="views">
-                <span class="filter__form-radio-indicator">more 1000</span>
+                <input class="filter__form-radio hidden" type="radio" value="1000-2000" name="views">
+                <span class="filter__form-radio-indicator">1000-2000</span>
               </label>
           </fieldset>
           <fieldset class="filter__comments filter__fieldset">
             <legend class="filter__legend">Comments</legend>
               <label class="filter__checkbox-label">
                 <input class="filter__form-checkbox hidden" type="checkbox" value="0-0" name="commentsCount">
-                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_main">not a single </span>
+                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_main">0</span>
+              </label>
+              <label class="filter__checkbox-label">
+                <input class="filter__form-checkbox hidden" type="checkbox" value="0-1" name="commentsCount">
+                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_main">0-1</span>
               </label>
               <label class="filter__checkbox-label">
                 <input class="filter__form-checkbox hidden" type="checkbox" value="1-50" name="commentsCount">
-                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_main">more 1</span>
-              </label>
-              <label class="filter__checkbox-label">
-                <input class="filter__form-checkbox hidden" type="checkbox" value="50-999999" name="commentsCount">
-                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_main">more 50</span>
+                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_main">1-50</span>
               </label>
           </fieldset>
           <fieldset class="filter__how-show filter__fieldset">
@@ -110,9 +114,9 @@
               </label>
           </fieldset>
           <button class="button filter__reset-button button_white" type="reset">Apply</button>
-          <fieldset class="filter__form filter__fieldset">
+          <fieldset class="filter__form filter__search filter__fieldset">
             <label class="filter__form-label" for="filter-search">
-              <input type="text" class="filter__form-input" id="filter-search" name="search"/>
+              <input aria-label="Search by word" type="text" class="filter__form-input" id="filter-search" name="search"/>
             </label>
             <button class="button filter__form-button button_white" type="submit">Search</button>
           </fieldset>
@@ -120,7 +124,7 @@
         <ul class="blog list-point-none">
         </ul>
         <div class="selector">
-          <button class="selector-btn selector-btn_back">
+          <button aria-label="Button back" class="selector-btn selector-btn_back">
             <svg width="15" height="24" viewBox="0 0 15 24" xmlns="http://www.w3.org/2000/svg">
               <rect x="12.5791" y="23.6992" width="16.5512" height="3" rx="1.5" transform="rotate(-135 12.5791 23.6992)" />
               <rect x="14.7002" y="2.41992" width="16.5512" height="3" rx="1.5" transform="rotate(135 14.7002 2.41992)" />
@@ -128,7 +132,7 @@
           </button>
           <ul class="selector-pages list-point-none">
           </ul>
-          <button class="selector-btn selector-btn_forward">
+          <button aria-label="Button forward" class="selector-btn selector-btn_forward">
             <svg width="15" height="24" viewBox="0 0 15 24" xmlns="http://www.w3.org/2000/svg">
               <rect x="2.42139" y="0.300781" width="16.5512" height="3" rx="1.5" transform="rotate(45 2.42139 0.300781)" />
               <rect x="0.300049" y="21.5801" width="16.5512" height="3" rx="1.5" transform="rotate(-45 0.300049 21.5801)" />
@@ -178,9 +182,9 @@
             <input class="form__checkbox hidden acceptbutton-js" type="checkbox" value="no" name="acceptbutton">
             <span class="form__checkbox-indicator">Clicking on the button, you consent to the processing of your personal data.</span>
           </label>
-          <button class="button form__submit-button button_modal" type="submit">Sign up</button>
+          <button class="button form__submit-button button_modal button_modal-register" type="submit">Sign up</button>
         </form>
-        <button type="button" class="modal__close modal__close_register-js">
+        <button aria-label="Button close" type="button" class="modal__close modal__close_register-js">
           <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
             <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" />
             <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" />
@@ -199,9 +203,9 @@
             <label class="form__label" for="form-password-sing-in">Password <span class="form__label-star">*</span></label>
             <input class="form__input password-js" id="form-password-sing-in" type="password" name="password">
           </div>
-          <button class="button form__submit-button form__submit-button_2 button_white" type="submit">Log in</button>
+          <button class="button form__submit-button form__submit-button_2 button_white button_modal-sing-in" type="submit">Log in</button>
         </form>
-        <button type="button" class="modal__close modal__close_sing-in-js">
+        <button aria-label="Button close" type="button" class="modal__close modal__close_sing-in-js">
           <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
             <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" />
             <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" />
@@ -209,7 +213,7 @@
         </button>
       </div>
     </div>
-    <button class="top-button">
+    <button aria-label="Button top" class="top-button">
       <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="0.300781" y="12.5786" width="16.5512" height="3" rx="1.5" transform="rotate(-45 0.300781 12.5786)" fill="#070707"/>
         <rect x="21.5801" y="14.7" width="16.5512" height="3" rx="1.5" transform="rotate(-135 21.5801 14.7)" fill="#070707"/>
@@ -277,9 +281,9 @@
 				<input class="form__checkbox hidden" type="checkbox" value="no" name="acceptbutton">
 				<span class="form__checkbox-indicator">Clicking on the button, you consent to the processing of your personal data.</span>
 			</label>
-			<button class="button form__submit-button button_modal" type="submit">Send</button>
+			<button class="button form__submit-button button_modal button_modal-message" type="submit">Send</button>
 		</form>
-		<button type="button" class="modal__close modal__close_message-js">
+		<button aria-label="Button close" type="button" class="modal__close modal__close_message-js">
 			<svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
 				<rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" />
 				<rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" />
@@ -287,6 +291,7 @@
 		</button>
 	</div>
 </div>
+    <div class="loader-container_js"></div>
     <script src="./index.js"></script>
   </body>
 </html>
