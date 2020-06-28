@@ -14,14 +14,12 @@
   </head>
   <body>
     <header class="header header_2 container">
-  <a class="header__home-link header__hover" href="../../index.html">Home</a>
+  <a class="header__home-link header_hover" href="../../index.html">Home</a>
   <nav class="header__nav">
     <ul class="header__nav-list list-point-none">
-      <li><a class="header__nav-item header__hover" href="../../pages/blog/index.html">My blog</a></li>
-      <li><button class="header__nav-item header__sing-in-button header__sing-in-button_js header__hover">Sign in</button></li>
-      <li><button class="header__nav-item header__register-button header__register-button_js header__hover">Register</button></li>
-      <li><a class="header__nav-item header__profile_js header__active header__hover hidden-block" href="../../pages/profile/index.html">My profile</a></li>
-      <li><button class="header__nav-item header__sing-out-button header__sing-out-button_js hidden-block header__hover">Sign out</button></li>
+      <li><a class="header__nav-item header_hover" href="../../pages/blog/index.html">My blog</a></li>
+      <li><button class="header__nav-item header__sing-in-button header__sing-in-button_js header_hover">Sign in</button></li>
+      <li><button class="header__nav-item header__register-button header__register-button_js header_hover">Register</button></li>
     </ul>
   </nav>
   <button class="header__mobile-menu header__mobile-menu_js">
@@ -33,19 +31,17 @@
   </button>
   <div class="mobile-header">
     <div class="mobile-header__content">
-      <button class="mobile-header__button-close mobile-header__button-close_js header__hover">
+      <button class="mobile-header__button-close mobile-header__button-close_js header_hover">
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="3.37256" width="32" height="4" rx="2" transform="rotate(45 3.37256 0)" fill="#070707"/>
           <rect x="0.543945" y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0.543945 22.6289)" fill="#070707"/>
         </svg>          
       </button>
       <ul class="mobile-header__nav-list list-point-none">
-        <li><a class="mobile-header__nav-item header__hover" href="../../index.html">Home</a></li>
-        <li><a class="mobile-header__nav-item header__hover" href="../../pages/blog/index.html">My blog</a></li>
-        <li><button class="mobile-header__nav-item mobile-header__sing-in-button mobile-header__sing-in-button_js header__hover">Sign in</button></li>
-        <li><button class="mobile-header__nav-item mobile-header__register-button mobile-header__register-button_js header__hover">Register</button></li>
-        <li><a class="mobile-header__nav-item mobile-header__profile_js mobile-header__nav-item_active header__hover hidden" href="../../pages/profile/index.html">My profile</a></li>
-        <li><button class="mobile-header__nav-item mobile-header__sing-out-button mobile-header__sing-out-button_js hidden header__hover">Sign out</button></li>
+        <li><a class="mobile-header__nav-item mobile-header__nav-item_active header_hover" href="../../index.html">Home</a></li>
+        <li><a class="mobile-header__nav-item header_hover" href="../../pages/blog/index.html">My blog</a></li>
+        <li><button class="mobile-header__nav-item mobile-header__sing-in-button mobile-header__sing-in-button_js header_hover">Sign in</button></li>
+        <li><button class="mobile-header__nav-item mobile-header__register-button mobile-header__register-button_js header_hover">Register</button></li>
       </ul>
     </div>
   </div>
@@ -55,22 +51,25 @@
         <h1 class="title__site">My profile</h1>
         <section class="profile">
           <div class="profile__content">
-            <div class="profile__img-box">
-              <div class="profile__img"></div>
-            </div>
+            <picture class="profile__img-box">
+              <source srcset="../../static/images/Profile-mobile.png, ../../static/images/Profile-mobile@2.png 2x" media="(max-width: 700px)">
+              <source srcset="../../static/images/Profile-tablet.png, ../../static/images/Profile-tablet@2.png 2x" media="(max-width: 850px)">
+              <source srcset="../../static/images/Profile.png, ../../static/images/Profile@2.png 2x">
+              <img class="profile__img" src="../../static/images/Profile.png" width="320" height="450" alt="Profile photo"/>
+            </picture>
             <div class="profile__list-content">
               <ul class="profile__list list-point-none">
                 <li class="profile__list-item">
                   <span class="profile__list-title">Name:</span>
-                  <span class="profile__list-text profile__name"></span>
+                  <span class="profile__list-text">Ksenia</span>
                 </li>
                 <li class="profile__list-item">
                   <span class="profile__list-title">Surname:</span>
-                  <span class="profile__list-text profile__surname"></span>
+                  <span class="profile__list-text">Larioshkina</span>
                 </li>
                 <li class="profile__list-item">
                   <span class="profile__list-title">Email:</span>
-                  <span class="profile__list-text profile__email"></span>
+                  <span class="profile__list-text">larioshkina@gmail.com</span>
                 </li>
                 <li class="profile__list-item">
                   <span class="profile__list-title">Password:</span>
@@ -78,11 +77,11 @@
                 </li>
                 <li class="profile__list-item">
                   <span class="profile__list-title">Location:</span>
-                  <span class="profile__list-text profile__location"></span>
+                  <span class="profile__list-text">Moscow</span>
                 </li>
                 <li class="profile__list-item">
                   <span class="profile__list-title">Age:</span>
-                  <span class="profile__list-text profile__age"></span>
+                  <span class="profile__list-text">17</span>
                 </li>
               </ul>
               <button class="button profile__button profile__button-password profile__button-password-js button_white" type="submit">Change password</button>
@@ -95,80 +94,80 @@
     </main>
     <div class="modal modal_close modal_editing-data-js">
       <div class="modal__content">
-        <form name="form-editing-data" class="form form_modal">
-          <div class="form__row form__row_column">
+        <form class="form form_modal" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+          <div class="form__row">
             <label class="form__label" for="form-email-editing-data">Email</label>
-            <input class="form__input form__input_editing-data-js" id="form-email-editing-data" type="text" name="email">
+            <input class="form__input form__input_editing-data-js" id="form-email-editing-data" type="email" name="email">
           </div>
           <div class="form__row">
             <div class="form__row-short form__row-short_2">
               <label class="form__label form__label_2" for="form-name-editing-data">Name</label>
-              <input class="form__input name-js" id="form-name-editing-data" type="text" name="name">
+              <input class="form__input" id="form-name-editing-data" type="text" name="name">
             </div>
             <div class="form__row-short">
               <label class="form__label form__label_2" for="form-surname-editing-data">Surname</label>
-              <input class="form__input surname-js" id="form-surname-editing-data" type="text" name="surname">
+              <input class="form__input" id="form-surname-editing-data" type="text" name="surname">
             </div>
           </div>
           <div class="form__row">
             <div class="form__row-short form__row-short_2">
               <label class="form__label form__label_2" for="form-location-editing-data">Location</label>
-              <input class="form__input location-js" id="form-location-editing-data" type="text" name="location">
+              <input class="form__input" id="form-location-editing-data" type="text" name="location">
             </div>
             <div class="form__row-short">
               <label class="form__label form__label_2" for="form-age-editing-data">Age</label>
-              <input class="form__input age-js" id="form-age-editing-data" type="number" name="age">
+              <input class="form__input" id="form-age-editing-data" type="text" name="age">
             </div>
           </div>
           <div class="form__row">
             <div class="form__row-short form__row-short_2">
-              <span class="form__label-text">Profile picture</span>
-              <input class="form__input avatar-js" id="form-profile-picture-editing-data" type="file" name="avatar">
-              <label class="form__label form__label_2 form__label-picture" for="form-profile-picture-editing-data">Choose a file...</label>
+              <label class="form__label form__label_2" for="form-profile-picture-editing-data">Profile picture</label>
+              <input class="form__input" id="form-profile-picture-editing-data" type="text" name="profile picture" value="Choose a file..." >
             </div>
           </div>
-          <button class="button form__submit-button form__submit-button_2 button_white button_modal-editing-data" type="submit">Submit changes</button>
+          <button class="button form__submit-button form__submit-button_2 button_white" type="submit">Submit changes</button>
         </form>
-        <button aria-label="Button close" type="button" class="modal__close modal__close-editing-data-js">
+        <button type="button" class="modal__close modal__close-editing-data-js">
           <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
             <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" />
             <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" />
+          </svg>
           </svg>
         </button>
       </div>
     </div>
     <div class="modal modal_close modal_password-edit-js">
       <div class="modal__content">
-        <form name="form-password-edit" class="form form_modal form_modal-password-edit">
-          <div class="form__row form__row_column">
+        <form class="form form_modal form_modal-password-edit" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+          <div class="form__row">
             <label class="form__label" for="form-old-password-edit">Old password <span class="form__label-star">*</span></label>
-            <input class="form__input form__input_sing-in-js password-js" id="form-old-password-edit" type="password" name="oldPassword">
+            <input class="form__input form__input_sing-in-js" id="form-old-password-edit" type="password" name="password">
           </div>
-          <div class="form__row form__row_column">
+          <div class="form__row">
             <label class="form__label" for="form-new-password-edit">New password <span class="form__label-star">*</span></label>
-            <input class="form__input new-password-js" id="form-new-password-edit" type="password" name="newPassword">
+            <input class="form__input" id="form-new-password-edit" type="password" name="password">
           </div>
-          <div class="form__row form__row_column">
+          <div class="form__row">
             <label class="form__label" for="form-repeat-password-edit">Repeat new password <span class="form__label-star">*</span></label>
-            <input class="form__input new-password-repeat-js" id="form-repeat-password-edit" type="password" name="newPasswordRep">
+            <input class="form__input" id="form-repeat-password-edit" type="password" name="password">
           </div>
-          <button class="button form__submit-button form__submit-button_2 button_white button_modal-password-edit" type="submit">Change password</button>
+          <button class="button form__submit-button form__submit-button_2 button_white" type="submit">Change password</button>
         </form>
-        <button aria-label="Button close" type="button" class="modal__close modal__close_password-edit-js">
+        <button type="button" class="modal__close modal__close_password-edit-js">
           <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
             <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" />
             <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" />
           </svg>
+          </svg>
         </button>
       </div>
     </div>
-    <button aria-label="Button top" class="top-button">
+    <button class="top-button">
       <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="0.300781" y="12.5786" width="16.5512" height="3" rx="1.5" transform="rotate(-45 0.300781 12.5786)" fill="#070707"/>
         <rect x="21.5801" y="14.7" width="16.5512" height="3" rx="1.5" transform="rotate(-135 21.5801 14.7)" fill="#070707"/>
       </svg>                      
     </button>
-    <div class="loader-container_js"></div>
     <script src="./index.js"></script>
   </body>
 </html>

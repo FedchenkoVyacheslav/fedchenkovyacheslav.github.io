@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="../../common.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="./style.css">
 		<link rel="stylesheet" href="/static/fonts/gilroy.css" />
     <link rel="shortcut icon" href="../../static/images/favicon.ico"/>
     <title>My personal portfolio.</title>
@@ -15,14 +14,12 @@
   </head>
   <body>
     <header class="header container">
-  <a class="header__home-link header__active header__hover" href="../../index.html">Home</a>
+  <a class="header__home-link header_hover" href="../../index.html">Home</a>
   <nav class="header__nav">
     <ul class="header__nav-list list-point-none">
-      <li><a class="header__nav-item header__hover" href="../../pages/blog/index.html">My blog</a></li>
-      <li><button class="header__nav-item header__sing-in-button header__sing-in-button_js header__hover">Sign in</button></li>
-      <li><button class="header__nav-item header__register-button header__register-button_js header__hover">Register</button></li>
-      <li><a class="header__nav-item header__profile_js header__hover hidden-block" href="../../pages/profile/index.html">My profile</a></li>
-      <li><button class="header__nav-item header__sing-out-button header__sing-out-button_js hidden-block header__hover">Sign out</button></li>
+      <li><a class="header__nav-item header_hover" href="../../pages/blog/index.html">My blog</a></li>
+      <li><button class="header__nav-item header__sing-in-button header__sing-in-button_js header_hover">Sign in</button></li>
+      <li><button class="header__nav-item header__register-button header__register-button_js header_hover">Register</button></li>
     </ul>
   </nav>
   <button class="header__mobile-menu header__mobile-menu_js">
@@ -34,19 +31,17 @@
   </button>
   <div class="mobile-header">
     <div class="mobile-header__content">
-      <button class="mobile-header__button-close mobile-header__button-close_js header__hover">
+      <button class="mobile-header__button-close mobile-header__button-close_js header_hover">
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="3.37256" width="32" height="4" rx="2" transform="rotate(45 3.37256 0)" fill="#070707"/>
           <rect x="0.543945" y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0.543945 22.6289)" fill="#070707"/>
         </svg>          
       </button>
       <ul class="mobile-header__nav-list list-point-none">
-        <li><a class="mobile-header__nav-item mobile-header__nav-item_active header__hover" href="../../index.html">Home</a></li>
-        <li><a class="mobile-header__nav-item header__hover" href="../../pages/blog/index.html">My blog</a></li>
-        <li><button class="mobile-header__nav-item mobile-header__sing-in-button mobile-header__sing-in-button_js header__hover">Sign in</button></li>
-        <li><button class="mobile-header__nav-item mobile-header__register-button mobile-header__register-button_js header__hover">Register</button></li>
-        <li><a class="mobile-header__nav-item mobile-header__profile_js header__hover hidden" href="../../pages/profile/index.html">My profile</a></li>
-        <li><button class="mobile-header__nav-item mobile-header__sing-out-button mobile-header__sing-out-button_js hidden header__hover">Sign out</button></li>
+        <li><a class="mobile-header__nav-item mobile-header__nav-item_active header_hover" href="../../index.html">Home</a></li>
+        <li><a class="mobile-header__nav-item header_hover" href="../../pages/blog/index.html">My blog</a></li>
+        <li><button class="mobile-header__nav-item mobile-header__sing-in-button mobile-header__sing-in-button_js header_hover">Sign in</button></li>
+        <li><button class="mobile-header__nav-item mobile-header__register-button mobile-header__register-button_js header_hover">Register</button></li>
       </ul>
     </div>
   </div>
@@ -54,59 +49,58 @@
     <main>
       <section class="presentation container">
         <div class="presentation__content">
-          <h1 class="presentation__title">Antonina Antoninovna</h1>
-          <p class="presentation__text">Future front-end developer 23 years old, Tolyatti</p>
+          <h1 class="presentation__title">Fedchenko Vyacheslav</h1>
+          <p class="presentation__text">Future front-end developer 33 years old, Tolyatti</p>
         </div>
-        <div class="slider">
-          <div class="slider__wrapper">
-            <div class="slider__inner-wrapper">
-              <div class="slider__slide">
-                <picture class="slider__img-box">
-                  <source srcset="../../static/images/my_photo1-mobile.jpg, ../../static/images/my_photo1-mobile@2.jpg 2x" media="(max-width: 700px)">
-                  <source srcset="../../static/images/my_photo1-tablet.jpg, ../../static/images/my_photo1-tablet@2.jpg 2x" media="(max-width: 850px)">
-                  <source srcset="../../static/images/my_photo1.jpg, ../../static/images/my_photo1@2.jpg 2x">
-                  <img class="slider__img" src="../../static/images/my_photo1.jpg" width="1000" height="465" alt="My photo"/>
-                </picture>
-              </div>
-              <div class="slider__slide">
-                <picture class="slider__img-box">
-                  <source srcset="../../static/images/my_photo2-mobile.jpg, ../../static/images/my_photo2-mobile@2.jpg 2x" media="(max-width: 700px)">
-                  <source srcset="../../static/images/my_photo2-tablet.jpg, ../../static/images/my_photo2-tablet@2.jpg 2x" media="(max-width: 850px)">
-                  <source srcset="../../static/images/my_photo2.jpg, ../../static/images/my_photo2@2.jpg 2x">
-                  <img class="slider__img" src="../../static/images/my_photo2.jpg" width="1000" height="465" alt="My photo"/>
-                </picture>
-              </div>
-              <div class="slider__slide">
-                <picture class="slider__img-box">
-                  <source srcset="../../static/images/my_photo3-mobile.jpg, ../../static/images/my_photo3-mobile@2.jpg 2x" media="(max-width: 700px)">
-                  <source srcset="../../static/images/my_photo3-tablet.jpg, ../../static/images/my_photo3-tablet@2.jpg 2x" media="(max-width: 850px)">
-                  <source srcset="../../static/images/my_photo3.jpg, ../../static/images/my_photo3@2.jpg 2x">
-                  <img class="slider__img" src="../../static/images/my_photo3.jpg" width="1000" height="465" alt="My photo"/>
-                </picture>
-              </div>
-              <div class="slider__slide">
-                <picture class="slider__img-box">
-                  <source srcset="../../static/images/my_photo4-mobile.jpg, ../../static/images/my_photo4-mobile@2.jpg 2x" media="(max-width: 700px)">
-                  <source srcset="../../static/images/my_photo4-tablet.jpg, ../../static/images/my_photo4-tablet@2.jpg 2x" media="(max-width: 850px)">
-                  <source srcset="../../static/images/my_photo4.jpg, ../../static/images/my_photo4@2.jpg 2x">
-                  <img class="slider__img" src="../../static/images/my_photo4.jpg" width="1000" height="465" alt="My photo"/>
-                </picture>
-              </div>
-            </div>
-          </div>
-          <div class="slider__bottom-panel">
-            <button aria-label="Button back" class="slider__button slider__button_back">
+        <div class="presentation__slider">
+          <picture class="presentation__img-box">
+            <source srcset="../../static/images/my_photo-mobile.jpg, ../../static/images/my_photo-mobile@2.jpg 2x" media="(max-width: 700px)">
+            <source srcset="../../static/images/my_photo-tablet.jpg, ../../static/images/my_photo-tablet@2.jpg 2x" media="(max-width: 850px)">
+            <source srcset="../../static/images/my_photo.jpg, ../../static/images/my_photo@2.jpg 2x">
+            <img class="presentation__img" src="../../static/images/my_photo.jpg" width="1000" height="465" alt="My photo"/>
+          </picture>
+          <div class="presentation__selector">
+            <button class="presentation__selector-btn presentation__selector-btn_back">
               <svg width="15" height="24" viewBox="0 0 15 24" xmlns="http://www.w3.org/2000/svg">
                 <rect x="12.5791" y="23.6992" width="16.5512" height="3" rx="1.5" transform="rotate(-135 12.5791 23.6992)" />
                 <rect x="14.7002" y="2.41992" width="16.5512" height="3" rx="1.5" transform="rotate(135 14.7002 2.41992)" />
-              </svg>  
+              </svg>                
             </button>
-            <div class="slider__pagination"></div>
-            <button aria-label="Button next" class="slider__button slider__button_next">
+            <ul class="presentation__selector-pages list-point-none">
+              <li class="presentation__selector-item presentation__selector-item_active">
+                <button class="presentation__selector-btn-middle">
+                  <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="5" cy="5.00006" r="5" />
+                  </svg>
+                </button>     
+              </li>
+              <li class="presentation__selector-item">
+                <button class="presentation__selector-btn-middle">
+                  <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="5" cy="5.00006" r="5" />
+                  </svg>
+                </button>
+              </li>
+              <li class="presentation__selector-item">
+                <button class="presentation__selector-btn-middle">
+                  <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="5" cy="5.00006" r="5" />
+                  </svg>
+                </button>
+              </li>
+              <li class="presentation__selector-item">
+                <button class="presentation__selector-btn-middle">
+                  <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="5" cy="5.00006" r="5" />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+            <button class="presentation__selector-btn presentation__selector-btn_forward">
               <svg width="15" height="24" viewBox="0 0 15 24" xmlns="http://www.w3.org/2000/svg">
                 <rect x="2.42139" y="0.300781" width="16.5512" height="3" rx="1.5" transform="rotate(45 2.42139 0.300781)" />
                 <rect x="0.300049" y="21.5801" width="16.5512" height="3" rx="1.5" transform="rotate(-45 0.300049 21.5801)" />
-              </svg>   
+              </svg>                                                       
             </button>
           </div>
         </div>
@@ -132,29 +126,29 @@
         <p class="skills__text">I work in such programs as</p>
         <ul class="skills__list list-point-none">
           <li class="skills__item">
-            <svg aria-label="HTML 5" width="79" height="90" viewBox="0 0 79 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="79" height="90" viewBox="0 0 79 90" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 0L7.19464 81L39.5 90L71.7941 81.0056L79 0H0Z" fill="#FF5722"/>
               <path d="M63.3977 26.4888H39.5002H25.5342L26.437 36.6644H39.5002H62.4949L59.7807 67.1744L39.5002 72.8163L39.4833 72.8219L19.2142 67.1744L17.7978 51.2163H27.7292L28.4684 59.4963L39.4889 62.4832L39.5002 62.4775L50.532 59.4907L51.6832 46.6038H39.5002H17.3915L14.7168 16.5607H39.5002H64.278L63.3977 26.4888Z" fill="#FAFAFA"/>
             </svg>
             <p class="skills__item-title">HTML 5</p>
             <div class="skills__loader">
               <span class="skills__loader-progress">85%</span>
-              <div aria-label="HTML 5 progress" class="skills__loader-scale skills__loader-scale_html"></div>
+              <div class="skills__loader-scale skills__loader-scale_html"></div>
             </div>    
           </li>
           <li class="skills__item">
-            <svg aria-label="CSS/SCSS" width="79" height="90" viewBox="0 0 79 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="79" height="90" viewBox="0 0 79 90" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 0L7.19464 81L39.5 90L71.7941 81.0056L79 0H0Z" fill="#2196F3"/>
               <path d="M63.6174 26.4887L62.7089 36.6643L59.9665 67.1687L39.4999 72.8105L39.4829 72.8162L19.0276 67.1687L17.5999 51.2162H27.6217L28.3665 59.4905L39.4886 62.483L39.4942 62.4774L50.6332 59.4849L52.1511 45.698L17.1203 45.7937L16.1272 36.3662L52.9919 35.933L53.7368 25.8418L15.1397 25.9487L14.4907 16.5605H39.4999H64.509L63.6174 26.4887Z" fill="#FAFAFA"/>
             </svg>
             <p class="skills__item-title">CSS/SCSS</p>
             <div class="skills__loader">
               <span class="skills__loader-progress">55%</span>
-              <div aria-label="CSS/SCSS progress" class="skills__loader-scale skills__loader-scale_css"></div>
+              <div class="skills__loader-scale skills__loader-scale_css"></div>
             </div>             
           </li>
           <li class="skills__item">
-            <svg aria-label="JavaScript" width="68" height="90" viewBox="0 0 68 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="68" height="90" viewBox="0 0 68 90" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M64.0722 90H3.92785C1.7586 90 0 88.2298 0 86.0463V3.9537C0 1.77017 1.7586 0 3.92785 0H51.5703L67.9993 15.7242V86.0463C68 88.2298 66.2414 90 64.0722 90Z" fill="#F4F4F4"/>
               <path d="M51.5706 0H44.5068L60.9359 15.7242V86.0463C60.9359 88.2298 59.178 90 57.008 90H64.0717C66.241 90 67.9996 88.2298 67.9996 86.0463V15.7242L51.5706 0Z" fill="#E8E8E8"/>
               <path d="M60.9356 8.96347L51.5703 0H3.92785C1.7586 0 0 1.77017 0 3.9537V8.96347H60.9356Z" fill="#F6D867"/>
@@ -168,11 +162,11 @@
               <p class="skills__item-title">JavaScript</p>
               <div class="skills__loader">
                 <span class="skills__loader-progress">5% </span>
-                <div aria-label="JavaScript progress" class="skills__loader-scale skills__loader-scale_js"></div>
+                <div class="skills__loader-scale skills__loader-scale_js"></div>
               </div>    
           </li>
           <li class="skills__item">
-            <svg aria-label="Git/GitHub" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect width="90" height="90" fill="url(#pattern0)"/>
               <defs>
               <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -184,11 +178,11 @@
             <p class="skills__item-title">Git/GitHub</p>
             <div class="skills__loader">
               <span class="skills__loader-progress">15%</span>
-              <div aria-label="Git/GitHub progress" class="skills__loader-scale skills__loader-scale_git"></div>
+              <div class="skills__loader-scale skills__loader-scale_git"></div>
             </div>              
           </li>
           <li class="skills__item">
-            <svg aria-label="Figma" width="60" height="90" viewBox="0 0 60 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="60" height="90" viewBox="0 0 60 90" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.9954 90.0008C23.275 90.0008 29.9907 83.2858 29.9907 75.007V60.0132H14.9954C6.71572 60.0132 0 66.7282 0 75.007C0 83.2858 6.71572 90.0008 14.9954 90.0008Z" fill="#0ACF83"/>
               <path d="M0 45.0014C0 36.7226 6.71572 30.0076 14.9954 30.0076H29.9907V60.0135H14.9954C6.71572 59.9951 0 53.2801 0 45.0014Z" fill="#A259FF"/>
               <path d="M0 14.9938C0 6.71501 6.71572 0 14.9954 0H29.9907V30.006H14.9954C6.71572 30.006 0 23.2726 0 14.9938Z" fill="#F24E1E"/>
@@ -198,7 +192,7 @@
               <p class="skills__item-title">Figma</p>
               <div class="skills__loader">
                 <span class="skills__loader-progress">80%</span>
-                <div aria-label="Figma progress" class="skills__loader-scale skills__loader-scale_figma"></div>
+                <div class="skills__loader-scale skills__loader-scale_figma"></div>
               </div>          
           </li>
         </ul>
@@ -206,172 +200,114 @@
       <section class="portfolio">
         <div class="portfolio__content container">
           <h2 class="portfolio__title">Portfolio</h2>
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <picture class="portfolio__img-box">
-                    <source srcset="../../static/images/Portfolio1-mobile.jpg, ../../static/images/Portfolio1-mobile@2.jpg 2x" media="(max-width: 700px)">
-                    <source srcset="../../static/images/Portfolio1-tablet.jpg, ../../static/images/Portfolio1-tablet@2.jpg 2x" media="(max-width: 850px)">
-                    <source srcset="../../static/images/Portfolio1.jpg, ../../static/images/Portfolio1@2.jpg 2x">
-                    <img class="portfolio__img" src="../../static/images/Portfolio1.jpg" width="1000" height="604" alt="Portfolio main page"/>
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture class="portfolio__img-box">
-                    <source srcset="../../static/images/Portfolio2-mobile.jpg, ../../static/images/Portfolio2-mobile@2.jpg 2x" media="(max-width: 700px)">
-                    <source srcset="../../static/images/Portfolio2-tablet.jpg, ../../static/images/Portfolio2-tablet@2.jpg 2x" media="(max-width: 850px)">
-                    <source srcset="../../static/images/Portfolio2.jpg, ../../static/images/Portfolio2@2.jpg 2x">
-                    <img class="portfolio__img" src="../../static/images/Portfolio2.jpg" width="1000" height="604" alt="Portfolio category products page"/>
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture class="portfolio__img-box">
-                    <source srcset="../../static/images/Portfolio3-mobile.jpg, ../../static/images/Portfolio3-mobile@2.jpg 2x" media="(max-width: 700px)">
-                    <source srcset="../../static/images/Portfolio3-tablet.jpg, ../../static/images/Portfolio3-tablet@2.jpg 2x" media="(max-width: 850px)">
-                    <source srcset="../../static/images/Portfolio3.jpg, ../../static/images/Portfolio3@2.jpg 2x">
-                    <img class="portfolio__img" src="../../static/images/Portfolio3.jpg" width="1000" height="604" alt="Portfolio toys page"/>
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture class="portfolio__img-box">
-                    <source srcset="../../static/images/Portfolio4-mobile.jpg, ../../static/images/Portfolio4-mobile@2.jpg 2x" media="(max-width: 700px)">
-                    <source srcset="../../static/images/Portfolio4-tablet.jpg, ../../static/images/Portfolio4-tablet@2.jpg 2x" media="(max-width: 850px)">
-                    <source srcset="../../static/images/Portfolio4.jpg, ../../static/images/Portfolio4@2.jpg 2x">
-                    <img class="portfolio__img" src="../../static/images/Portfolio4.jpg" width="1000" height="604" alt="Portfolio blog page"/>
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture class="portfolio__img-box">
-                    <source srcset="../../static/images/Portfolio5-mobile.jpg, ../../static/images/Portfolio5-mobile@2.jpg 2x" media="(max-width: 700px)">
-                    <source srcset="../../static/images/Portfolio5-tablet.jpg, ../../static/images/Portfolio5-tablet@2.jpg 2x" media="(max-width: 850px)">
-                    <source srcset="../../static/images/Portfolio5.jpg, ../../static/images/Portfolio5@2.jpg 2x">
-                    <img class="portfolio__img" src="../../static/images/Portfolio5.jpg" width="1000" height="604" alt="Portfolio contact us page"/>
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture class="portfolio__img-box">
-                    <source srcset="../../static/images/Portfolio6-mobile.jpg, ../../static/images/Portfolio6-mobile@2.jpg 2x" media="(max-width: 700px)">
-                    <source srcset="../../static/images/Portfolio6-tablet.jpg, ../../static/images/Portfolio6-tablet@2.jpg 2x" media="(max-width: 850px)">
-                    <source srcset="../../static/images/Portfolio6.jpg, ../../static/images/Portfolio6@2.jpg 2x">
-                    <img class="portfolio__img" src="../../static/images/Portfolio6.jpg" width="1000" height="604" alt="Portfolio animation scene page"/>
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture class="portfolio__img-box">
-                    <source srcset="../../static/images/Portfolio7-mobile.jpg, ../../static/images/Portfolio7-mobile@2.jpg 2x" media="(max-width: 700px)">
-                    <source srcset="../../static/images/Portfolio7-tablet.jpg, ../../static/images/Portfolio7-tablet@2.jpg 2x" media="(max-width: 850px)">
-                    <source srcset="../../static/images/Portfolio7.jpg, ../../static/images/Portfolio7@2.jpg 2x">
-                    <img class="portfolio__img" src="../../static/images/Portfolio7.jpg" width="1000" height="604" alt="Portfolio svg animation page"/>
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture class="portfolio__img-box">
-                    <source srcset="../../static/images/Portfolio8-mobile.jpg, ../../static/images/Portfolio8-mobile@2.jpg 2x" media="(max-width: 700px)">
-                    <source srcset="../../static/images/Portfolio8-tablet.jpg, ../../static/images/Portfolio8-tablet@2.jpg 2x" media="(max-width: 850px)">
-                    <source srcset="../../static/images/Portfolio8.jpg, ../../static/images/Portfolio8@2.jpg 2x">
-                    <img class="portfolio__img" src="../../static/images/Portfolio8.jpg" width="1000" height="604" alt="Portfolio grid page"/>
-                  </picture>
-                </div>
-            </div>
-            <div class="swiper-button-prev">
-              <svg aria-label="Button back" width="43" height="61" viewBox="0 0 43 61" xmlns="http://www.w3.org/2000/svg">
+          <div class="portfolio__img-box">
+            <picture class="portfolio__img-box">
+              <source srcset="../../static/images/Portfolio-mobile.jpg, ../../static/images/Portfolio-mobile@2.jpg 2x" media="(max-width: 700px)">
+              <source srcset="../../static/images/Portfolio-tablet.jpg, ../../static/images/Portfolio-tablet@2.jpg 2x" media="(max-width: 850px)">
+              <source srcset="../../static/images/Portfolio.jpg, ../../static/images/Portfolio@2.jpg 2x">
+              <img class="portfolio__img" src="../../static/images/Portfolio.jpg" width="1000" height="604" alt="Portfolio"/>
+            </picture>
+            <button class="portfolio__btn portfolio__btn_back">
+              <svg width="43" height="61" viewBox="0 0 43 61" xmlns="http://www.w3.org/2000/svg">
                 <rect x="30.1641" y="52" width="29.9303" height="5.42502" rx="2.71251" transform="rotate(-135 30.1641 52)" />
                 <rect x="34" y="13.5198" width="29.9303" height="5.42502" rx="2.71251" transform="rotate(135 34 13.5198)" />
-              </svg>  
-            </div>
-            <div class="swiper-button-next">
-              <svg aria-label="Button next" width="43" height="61" viewBox="0 0 43 61" xmlns="http://www.w3.org/2000/svg">
+              </svg>                                                 
+            </button>
+            <button class="portfolio__btn portfolio__btn_forward">
+              <svg width="43" height="61" viewBox="0 0 43 61" xmlns="http://www.w3.org/2000/svg">
                 <rect x="12.8359" y="9" width="29.9303" height="5.42502" rx="2.71251" transform="rotate(45 12.8359 9)" />
                 <rect x="9" y="47.4802" width="29.9303" height="5.42502" rx="2.71251" transform="rotate(-45 9 47.4802)" />
               </svg>
+            </button>
+            <div class="portfolio__footer">
+              <a class="portfolio__footer-link" target="_blank" href="https://fedchenkovyacheslav.github.io/project">Learning site for DL Academy courses</a>
+              <p class="portfolio__footer-text">A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>
             </div>
-            <div class="swiper-footer">
-              <a class="swiper-footer-link" target="_blank" href="https://fedchenkovyacheslav.github.io/project">Learning site for DL Academy courses</a>
-              <p class="swiper-footer-text">A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>
-            </div>
-        </div>
+          </div>
         </div>
       </section>
     </main>
     <div class="modal modal_close modal_register-js">
       <div class="modal__content">
         <form name="form-register" class="form form_modal">
-          <div class="form__row form__row_column">
+          <div class="form__row">
             <label class="form__label" for="form-email-register">Email <span class="form__label-star">*</span></label>
-            <input class="form__input form__input_register-js email-js" id="form-email-register" type="text" name="email">
+            <input class="form__input form__input_register-js email_js" id="form-email-register" type="text" name="email">
           </div>
           <div class="form__row">
             <div class="form__row-short form__row-short_2">
               <label class="form__label form__label_2" for="form-name-register">Name <span class="form__label-star">*</span></label>
-              <input class="form__input name-js" id="form-name-register" type="text" name="name">
+              <input class="form__input name_js" id="form-name-register" type="text" name="name">
             </div>
             <div class="form__row-short">
               <label class="form__label form__label_2" for="form-surname-register">Surname <span class="form__label-star">*</span></label>
-              <input class="form__input surname-js" id="form-surname-register" type="text" name="surname">
+              <input class="form__input surname_js" id="form-surname-register" type="text" name="surname">
             </div>
           </div>
           <div class="form__row">
             <div class="form__row-short form__row-short_2">
               <label class="form__label form__label_2" for="form-password-register">Password <span class="form__label-star">*</span></label>
-              <input class="form__input password-js" id="form-password-register" type="password" name="password">
+              <input class="form__input password_js" id="form-password-register" type="password" name="password">
             </div>
             <div class="form__row-short">
               <label class="form__label form__label_2" for="form-password-repeat-register">Repeat password <span class="form__label-star">*</span></label>
-              <input class="form__input password-repeat-js" id="form-password-repeat-register" type="password" name="passwordRep">
+              <input class="form__input password-repeat_js" id="form-password-repeat-register" type="password" name="passwordRep">
             </div>
           </div>
           <div class="form__row">
             <div class="form__row-short form__row-short_2">
               <label class="form__label form__label_2" for="form-location-register">Location <span class="form__label-star">*</span></label>
-              <input class="form__input location-js" id="form-location-register" type="text" name="location">
+              <input class="form__input location_js" id="form-location-register" type="text" name="location">
             </div>
             <div class="form__row-short">
               <label class="form__label form__label_2" for="form-age-register">Age <span class="form__label-star">*</span></label>
-              <input class="form__input age-js" id="form-age-register" type="number" name="age">
+              <input class="form__input age_js" id="form-age-register" type="number" name="age">
             </div>
           </div>
           <label class="form__checkbox-label">
-            <input class="form__checkbox hidden acceptbutton-js" type="checkbox" value="no" name="acceptbutton">
+            <input class="form__checkbox hidden" type="checkbox" value="no" name="acceptbutton">
             <span class="form__checkbox-indicator">Clicking on the button, you consent to the processing of your personal data.</span>
           </label>
-          <button class="button form__submit-button button_modal button_modal-register" type="submit">Sign up</button>
+          <button class="button form__submit-button button_modal" type="submit">Sign up</button>
         </form>
-        <button aria-label="Button close" type="button" class="modal__close modal__close_register-js">
+        <button type="button" class="modal__close modal__close_register-js">
           <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
             <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" />
             <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" />
+          </svg>
           </svg>
         </button>
       </div>
     </div>
     <div class="modal modal_close modal_sing-in-js">
       <div class="modal__content">
-        <form name="form-sing-in" class="form form_modal form_modal-sing-in">
-          <div class="form__row form__row_column">
+        <form class="form form_modal form_modal-sing-in" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+          <div class="form__row">
             <label class="form__label" for="form-email-sing-in">Email <span class="form__label-star">*</span></label>
-            <input class="form__input form__input_sing-in-js email-js" id="form-email-sing-in" type="text" name="email">
+            <input class="form__input form__input_sing-in-js" id="form-email-sing-in" type="email" name="email">
           </div>
-          <div class="form__row form__row_column">
+          <div class="form__row">
             <label class="form__label" for="form-password-sing-in">Password <span class="form__label-star">*</span></label>
-            <input class="form__input password-js" id="form-password-sing-in" type="password" name="password">
+            <input class="form__input" id="form-password-sing-in" type="password" name="password">
           </div>
-          <button class="button form__submit-button form__submit-button_2 button_white button_modal-sing-in" type="submit">Log in</button>
+          <button class="button form__submit-button form__submit-button_2 button_white" type="submit">Log in</button>
         </form>
-        <button aria-label="Button close" type="button" class="modal__close modal__close_sing-in-js">
+        <button type="button" class="modal__close modal__close_sing-in-js">
           <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
             <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" />
             <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" />
           </svg>
+          </svg>
         </button>
       </div>
     </div>
-    <button aria-label="Button top" class="top-button">
+    <button class="top-button">
       <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="0.300781" y="12.5786" width="16.5512" height="3" rx="1.5" transform="rotate(-45 0.300781 12.5786)" fill="#070707"/>
         <rect x="21.5801" y="14.7" width="16.5512" height="3" rx="1.5" transform="rotate(-135 21.5801 14.7)" fill="#070707"/>
       </svg>                      
     </button>
-    <footer class="footer">
+    <footer class="footer footer_2">
 	<div class="footer__content container">
 		<div class="footer__content">
 			<h2 class="footer__title">Contacts</h2>
@@ -399,52 +335,51 @@
 			</li>
 		</ul>
 		<p class="footer__text-bottom">Design by <a class="footer__text-link" href="https://directline.digital/vacancies/dl-academy/">DL Academy</a></p>
-		<p class="footer__text-bottom">Program code from Antonina</a></p>
+		<p class="footer__text-bottom">Program code from Vyacheslav</a></p>
   </div>
 </footer>
 <div class="modal modal_close modal_message-js">
 	<div class="modal__content">
-		<form name="form-message" class="form form_modal" >
+		<form class="form form_modal" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
 			<div class="form__row">
 				<div class="form__row-short form__row-short_2">
 					<label class="form__label form__label_2" for="form-name-send-message">What is your name? <span class="form__label-star">*</span></label>
-					<input class="form__input form__input_message-js name-js" id="form-name-send-message" type="text" name="name">
+					<input class="form__input form__input_message-js" id="form-name-send-message" type="text" name="name">
 				</div>
 				<div class="form__row-short">
 					<label class="form__label form__label_2" for="form-message-send-message">Message subject <span class="form__label-star">*</span></label>
-					<input class="form__input message-js" id="form-message-send-message" type="text" name="message">
+					<input class="form__input" id="form-message-send-message" type="text" name="message">
 				</div>
 			</div>
 			<div class="form__row">
 				<div class="form__row-short form__row-short_2">
 					<label class="form__label form__label_2" for="form-email-send-message">Your Email <span class="form__label-star">*</span></label>
-					<input class="form__input email-js" id="form-email-send-message" type="text" name="email">
+					<input class="form__input" id="form-email-send-message" type="email" name="email">
 				</div>
 				<div class="form__row-short">
 					<label class="form__label form__label_2" for="form-phone-send-message">Your mobile phone <span class="form__label-star">*</span></label>
-					<input class="form__input phone-js" id="form-phone-send-message" type="tel" name="phone">
+					<input class="form__input" id="form-phone-send-message" type="text" name="phone">
 				</div>
 			</div>
-			<div class="form__row form__row_column">
+			<div class="form__row">
 				<label class="form__label" for="form-discuss-send-message">What do you want to discuss with me?</label>
-				<textarea class="form__input form__input-message messagetext-js" id="form-discuss-send-message" name="messagetext"></textarea>
+				<textarea class="form__input form__input-message" id="form-discuss-send-message" name="message"></textarea>
 			</div>
 			<label class="form__checkbox-label">
-				<input class="form__checkbox hidden" type="checkbox" value="no" name="acceptbutton">
+				<input class="form__checkbox hidden" type="checkbox" value="accept" name="accept-button">
 				<span class="form__checkbox-indicator">Clicking on the button, you consent to the processing of your personal data.</span>
 			</label>
-			<button class="button form__submit-button button_modal button_modal-message" type="submit">Send</button>
+			<button class="button form__submit-button button_modal" type="submit">Send</button>
 		</form>
-		<button aria-label="Button close" type="button" class="modal__close modal__close_message-js">
+		<button type="button" class="modal__close modal__close_message-js">
 			<svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
 				<rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" />
 				<rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" />
 			</svg>
+			</svg>
 		</button>
 	</div>
 </div>
-    <div class="loader-container_js"></div>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

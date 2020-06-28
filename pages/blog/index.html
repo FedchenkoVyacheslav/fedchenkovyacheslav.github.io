@@ -14,14 +14,12 @@
   </head>
   <body>
     <header class="header header_2 container">
-  <a class="header__home-link header__hover" href="../../index.html">Home</a>
+  <a class="header__home-link header_hover" href="../../index.html">Home</a>
   <nav class="header__nav">
     <ul class="header__nav-list list-point-none">
-      <li><a class="header__nav-item header__active header__hover" href="../../pages/blog/index.html">My blog</a></li>
-      <li><button class="header__nav-item header__sing-in-button header__sing-in-button_js header__hover">Sign in</button></li>
-      <li><button class="header__nav-item header__register-button header__register-button_js header__hover">Register</button></li>
-      <li><a class="header__nav-item header__profile_js header__hover hidden-block" href="../../pages/profile/index.html">My profile</a></li>
-      <li><button class="header__nav-item header__sing-out-button header__sing-out-button_js hidden-block header__hover">Sign out</button></li>
+      <li><a class="header__nav-item header_hover" href="../../pages/blog/index.html">My blog</a></li>
+      <li><button class="header__nav-item header__sing-in-button header__sing-in-button_js header_hover">Sign in</button></li>
+      <li><button class="header__nav-item header__register-button header__register-button_js header_hover">Register</button></li>
     </ul>
   </nav>
   <button class="header__mobile-menu header__mobile-menu_js">
@@ -33,19 +31,17 @@
   </button>
   <div class="mobile-header">
     <div class="mobile-header__content">
-      <button class="mobile-header__button-close mobile-header__button-close_js header__hover">
+      <button class="mobile-header__button-close mobile-header__button-close_js header_hover">
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="3.37256" width="32" height="4" rx="2" transform="rotate(45 3.37256 0)" fill="#070707"/>
           <rect x="0.543945" y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0.543945 22.6289)" fill="#070707"/>
         </svg>          
       </button>
       <ul class="mobile-header__nav-list list-point-none">
-        <li><a class="mobile-header__nav-item header__hover" href="../../index.html">Home</a></li>
-        <li><a class="mobile-header__nav-item mobile-header__nav-item_active header__hover" href="../../pages/blog/index.html">My blog</a></li>
-        <li><button class="mobile-header__nav-item mobile-header__sing-in-button mobile-header__sing-in-button_js header__hover">Sign in</button></li>
-        <li><button class="mobile-header__nav-item mobile-header__register-button mobile-header__register-button_js header__hover">Register</button></li>
-        <li><a class="mobile-header__nav-item mobile-header__profile_js header__hover hidden" href="../../pages/profile/index.html">My profile</a></li>
-        <li><button class="mobile-header__nav-item mobile-header__sing-out-button mobile-header__sing-out-button_js hidden header__hover">Sign out</button></li>
+        <li><a class="mobile-header__nav-item mobile-header__nav-item_active header_hover" href="../../index.html">Home</a></li>
+        <li><a class="mobile-header__nav-item header_hover" href="../../pages/blog/index.html">My blog</a></li>
+        <li><button class="mobile-header__nav-item mobile-header__sing-in-button mobile-header__sing-in-button_js header_hover">Sign in</button></li>
+        <li><button class="mobile-header__nav-item mobile-header__register-button mobile-header__register-button_js header_hover">Register</button></li>
       </ul>
     </div>
   </div>
@@ -53,86 +49,272 @@
     <main>
       <div class="container">
         <h1 class="title__site">My blog</h1>
-        <form class="filter" name="filterForm" method="get">
+        <form class="filter" name="product filter" method="get">
           <fieldset class="filter__tag filter__fieldset">
             <legend class="filter__legend">Tags</legend>
+              <label class="filter__checkbox-label">
+                <input class="filter__form-checkbox hidden" type="checkbox" name="tag" checked>
+                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_2 filter__form-checkbox-indicator_tag-1"></span>
+              </label>
+              <label class="filter__checkbox-label">
+                <input class="filter__form-checkbox hidden" type="checkbox" name="tag">
+                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_2 filter__form-checkbox-indicator_tag-2"></span>
+              </label>
+              <label class="filter__checkbox-label">
+                <input class="filter__form-checkbox hidden" type="checkbox" name="tag">
+                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_2 filter__form-checkbox-indicator_tag-3"></span>
+              </label>
+              <label class="filter__checkbox-label">
+                <input class="filter__form-checkbox hidden" type="checkbox" name="tag">
+                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_2 filter__form-checkbox-indicator_tag-4"></span>
+              </label>
+              <label class="filter__checkbox-label">
+                <input class="filter__form-checkbox hidden" type="checkbox" name="tag" >
+                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_2 filter__form-checkbox-indicator_tag-5"></span>
+              </label>
+              <label class="filter__checkbox-label">
+                <input class="filter__form-checkbox hidden" type="checkbox" name="tag" checked>
+                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_2 filter__form-checkbox-indicator_tag-6"></span>
+              </label>
+              <label class="filter__checkbox-label">
+                <input class="filter__form-checkbox hidden" type="checkbox" name="tag">
+                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_2 filter__form-checkbox-indicator_tag-7"></span>
+              </label>
+              <label class="filter__checkbox-label">
+                <input class="filter__form-checkbox hidden" type="checkbox" name="tag">
+                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_2 filter__form-checkbox-indicator_tag-8"></span>
+              </label>
           </fieldset>
           <fieldset class="filter__views filter__fieldset">
             <legend class="filter__legend">Views</legend>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="100-500" name="views" checked>
-                <span class="filter__form-radio-indicator">100-500</span>
+                <input class="filter__form-radio hidden" type="radio" value="more 100" name="views">
+                <span class="filter__form-radio-indicator">more 100</span>
               </label>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="500-1000" name="views">
-                <span class="filter__form-radio-indicator">500-1000</span>
+                <input class="filter__form-radio hidden" type="radio" value="more 500" name="views" checked>
+                <span class="filter__form-radio-indicator">more 500</span>
               </label>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="1000-2000" name="views">
-                <span class="filter__form-radio-indicator">1000-2000</span>
+                <input class="filter__form-radio hidden" type="radio" value="more 1000" name="views" >
+                <span class="filter__form-radio-indicator">more 1000</span>
               </label>
           </fieldset>
           <fieldset class="filter__comments filter__fieldset">
             <legend class="filter__legend">Comments</legend>
               <label class="filter__checkbox-label">
-                <input class="filter__form-checkbox hidden" type="checkbox" value="0-0" name="commentsCount">
-                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_main">0</span>
+                <input class="filter__form-checkbox hidden" type="checkbox" value="not a single" name="comments" checked>
+                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_main">not a single </span>
               </label>
               <label class="filter__checkbox-label">
-                <input class="filter__form-checkbox hidden" type="checkbox" value="0-1" name="commentsCount">
-                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_main">0-1</span>
+                <input class="filter__form-checkbox hidden" type="checkbox" value="more 1" name="comments">
+                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_main">more 1</span>
               </label>
               <label class="filter__checkbox-label">
-                <input class="filter__form-checkbox hidden" type="checkbox" value="1-50" name="commentsCount">
-                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_main">1-50</span>
+                <input class="filter__form-checkbox hidden" type="checkbox" value="more 50" name="comments">
+                <span class="filter__form-checkbox-indicator filter__form-checkbox-indicator_main">more 50</span>
               </label>
           </fieldset>
           <fieldset class="filter__how-show filter__fieldset">
             <legend class="filter__legend">How show?</legend>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="5" name="howShow" checked>
+                <input class="filter__form-radio hidden" type="radio" value="show 5" name="how-show" checked>
                 <span class="filter__form-radio-indicator">show 5</span>
               </label>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="10" name="howShow" >
+                <input class="filter__form-radio hidden" type="radio" value="show 10" name="how-show" >
                 <span class="filter__form-radio-indicator">show 10</span>
               </label>
           </fieldset>
           <fieldset class="filter__sort-by filter__fieldset">
             <legend class="filter__legend">Sort by</legend>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="date" name="sortBy" checked>
+                <input class="filter__form-radio hidden" type="radio" value="date" name="sort-by" checked>
                 <span class="filter__form-radio-indicator">date</span>
               </label>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="title" name="sortBy" >
+                <input class="filter__form-radio hidden" type="radio" value="title" name="sort-by" >
                 <span class="filter__form-radio-indicator">title</span>
               </label>
               <label class="filter__radio-label">
-                <input class="filter__form-radio hidden" type="radio" value="views" name="sortBy" >
+                <input class="filter__form-radio hidden" type="radio" value="views" name="sort-by" >
                 <span class="filter__form-radio-indicator">views</span>
               </label>
           </fieldset>
-          <button class="button filter__reset-button button_white" type="reset">Apply</button>
-          <fieldset class="filter__form filter__search filter__fieldset">
-            <label class="filter__form-label" for="filter-search">
-              <input aria-label="Search by word" type="text" class="filter__form-input" id="filter-search" name="search"/>
+          <button class="button filter__reset-button button_white" type="submit">Apply</button>
+          <fieldset class="filter__form filter__fieldset">
+            <label class="filter__form-label" for="filter-email">
+              <input type="email" class="filter__form-input" id="filter-email"/>
             </label>
             <button class="button filter__form-button button_white" type="submit">Search</button>
           </fieldset>
         </form>
         <ul class="blog list-point-none">
+          <li class="blog__item">
+            <picture class="blog__img-box">
+              <source srcset="../../static/images/Blog1-mobile.jpg, ../../static/images/Blog1-mobile@2.jpg 2x" media="(max-width: 700px)">
+              <source srcset="../../static/images/Blog1-tablet.jpg, ../../static/images/Blog1-tablet@2.jpg 2x" media="(max-width: 850px)">
+              <source srcset="../../static/images/Blog1.jpg, ../../static/images/Blog1@2.jpg 2x">
+              <img class="blog__img" src="../../static/images/Blog.jpg" width="320" height="236" alt="Blog photo"/>
+            </picture>
+            <div class="blog__content">
+              <ul class="blog__tag-list list-point-none">
+                <li class="blog__tag blog__tag_1"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_2"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_3"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_4"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_5"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_6"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_7"></li>
+                <li class="blog__tag blog__tag_8"></li>
+              </ul>
+              <span class="blog__date blog__info">20.01.2020</span>
+              <span class="blog__views blog__info">223 views</span>
+              <span class="blog__comments blog__info">97 comments</span>
+              <h2 class="blog__title">This is my new dog.</h2>
+              <p class="blog__text">Duis sit odio dui pretium suspendisse malesuada sit leo in. Massa nec eget etiam tellus ac. Sodales nibh pellentesque donec eu ultrices tortor condimentum massa.</p>
+              <a class="blog__link" href="#">Go to this post</a>
+            </div>
+          </li>
+          <li class="blog__item">
+            <picture class="blog__img-box">
+              <source srcset="../../static/images/Blog2-mobile.jpg, ../../static/images/Blog2-mobile@2.jpg 2x" media="(max-width: 700px)">
+              <source srcset="../../static/images/Blog2-tablet.jpg, ../../static/images/Blog2-tablet@2.jpg 2x" media="(max-width: 850px)">
+              <source srcset="../../static/images/Blog2.jpg, ../../static/images/Blog2@2.jpg 2x">
+              <img class="blog__img" src="../../static/images/Blog.jpg" width="320" height="236" alt="Blog photo"/>
+            </picture>
+            <div class="blog__content">
+              <ul class="blog__tag-list list-point-none">
+                <li class="blog__tag blog__tag_hidden blog__tag_1"></li>
+                <li class="blog__tag blog__tag_2"></li>
+                <li class="blog__tag blog__tag_3"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_4"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_5"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_6"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_7"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_8"></li>
+              </ul>
+              <span class="blog__date blog__info">17.01.2020</span>
+              <span class="blog__views blog__info">12 views</span>
+              <span class="blog__comments blog__info">0 comments</span>
+              <h2 class="blog__title">Why do roosters scream in the morning?</h2>
+              <p class="blog__text">Erat nunc parturient feugiat egestas adipiscing erat eu. Non neque mi volutpat et lectus.</p>
+              <a class="blog__link" href="#">Go to this post</a>
+            </div>
+          </li>
+          <li class="blog__item">
+            <picture class="blog__img-box">
+              <source srcset="../../static/images/Blog3-mobile.jpg, ../../static/images/Blog3-mobile@2.jpg 2x" media="(max-width: 700px)">
+              <source srcset="../../static/images/Blog3-tablet.jpg, ../../static/images/Blog3-tablet@2.jpg 2x" media="(max-width: 850px)">
+              <source srcset="../../static/images/Blog3.jpg, ../../static/images/Blog3@2.jpg 2x">
+              <img class="blog__img" src="../../static/images/Blog.jpg" width="320" height="236" alt="Blog photo"/>
+            </picture>
+            <div class="blog__content">
+              <ul class="blog__tag-list list-point-none">
+                <li class="blog__tag blog__tag_hidden blog__tag_1"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_2"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_3"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_4"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_5"></li>
+                <li class="blog__tag blog__tag_6"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_7"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_8"></li>
+              </ul>
+              <span class="blog__date blog__info">17.01.2020</span>
+              <span class="blog__views blog__info">337 views</span>
+              <span class="blog__comments blog__info">48 comments</span>
+              <h2 class="blog__title">Kangaroo. Start.</h2>
+              <p class="blog__text">At leo at nisl tortor egestas. Mauris luctus est luctus massa tellus erat gravida. Eget aenean eget diam habitant risus. Dapibus et, nec platea felis. Facilisi ut leo arcu, semper id pellentesque quisque ultrices etiam.</p>
+              <a class="blog__link" href="#">Go to this post</a>
+            </div>
+          </li>
+          <li class="blog__item">
+            <picture class="blog__img-box">
+              <source srcset="../../static/images/Blog4-mobile.jpg, ../../static/images/Blog4-mobile@2.jpg 2x" media="(max-width: 700px)">
+              <source srcset="../../static/images/Blog4-tablet.jpg, ../../static/images/Blog4-tablet@2.jpg 2x" media="(max-width: 850px)">
+              <source srcset="../../static/images/Blog4.jpg, ../../static/images/Blog4@2.jpg 2x">
+              <img class="blog__img" src="../../static/images/Blog.jpg" width="320" height="236" alt="Blog photo"/>
+            </picture>
+            <div class="blog__content">
+              <ul class="blog__tag-list list-point-none">
+                <li class="blog__tag blog__tag_1"></li>
+                <li class="blog__tag blog__tag_2"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_3"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_4"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_5"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_6"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_7"></li>
+                <li class="blog__tag blog__tag_8"></li>
+              </ul>
+              <span class="blog__date blog__info">15.01.2020</span>
+              <span class="blog__views blog__info">222 views</span>
+              <span class="blog__comments blog__info">14 comments</span>
+              <h2 class="blog__title">Met a duckling at the pond.</h2>
+              <p class="blog__text">Nulla tempus mauris sed vel bibendum. Felis urna suspendisse amet, laoreet sagittis. Semper pellentesque condimentum vitae morbi in dui. Et in et diam massa.</p>
+              <a class="blog__link" href="#">Go to this post</a>
+            </div>
+          </li>
+          <li class="blog__item">
+            <picture class="blog__img-box">
+              <source srcset="../../static/images/Blog5-mobile.jpg, ../../static/images/Blog5-mobile@2.jpg 2x" media="(max-width: 700px)">
+              <source srcset="../../static/images/Blog5-tablet.jpg, ../../static/images/Blog5-tablet@2.jpg 2x" media="(max-width: 850px)">
+              <source srcset="../../static/images/Blog5.jpg, ../../static/images/Blog5@2.jpg 2x">
+              <img class="blog__img" src="../../static/images/Blog.jpg" width="320" height="236" alt="Blog photo"/>
+            </picture>
+            <div class="blog__content">
+              <ul class="blog__tag-list list-point-none">
+                <li class="blog__tag blog__tag_hidden blog__tag_1"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_2"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_3"></li>
+                <li class="blog__tag blog__tag_4"></li>
+                <li class="blog__tag blog__tag_5"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_6"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_7"></li>
+                <li class="blog__tag blog__tag_hidden blog__tag_8"></li>
+              </ul>
+              <span class="blog__date blog__info">20.01.2020</span>
+              <span class="blog__views blog__info">122 views</span>
+              <span class="blog__comments blog__info">23 comments</span>
+              <h2 class="blog__title">Can dogs also be friends?</h2>
+              <p class="blog__text">Eu, libero aliquet nibh turpis quis nulla et ullamcorper purus. Consequat egestas sed sagittis morbi lacus. Consectetur et justo, sagittis vitae mi faucibus urna, eu. </p>
+              <a class="blog__link" href="#">Go to this post</a>
+            </div>
+          </li>
         </ul>
         <div class="selector">
-          <button aria-label="Button back" class="selector-btn selector-btn_back">
+          <button class="selector-btn selector-btn_back">
             <svg width="15" height="24" viewBox="0 0 15 24" xmlns="http://www.w3.org/2000/svg">
               <rect x="12.5791" y="23.6992" width="16.5512" height="3" rx="1.5" transform="rotate(-135 12.5791 23.6992)" />
               <rect x="14.7002" y="2.41992" width="16.5512" height="3" rx="1.5" transform="rotate(135 14.7002 2.41992)" />
             </svg>                
           </button>
           <ul class="selector-pages list-point-none">
+            <li class="selector-item selector-item_active">
+              <button class="selector-btn-middle selector-btn-middle_active">1</button>     
+            </li>
+            <li class="selector-item">
+              <button class="selector-btn-middle">2</button>     
+            </li>
+            <li class="selector-item">
+              <button class="selector-btn-middle">3</button>     
+            </li>
+            <li class="selector-item">
+              <button class="selector-btn-middle">4</button>     
+            </li>
+            <li class="selector-item">
+              <button class="selector-btn-middle">5</button>     
+            </li>
+            <li class="selector-item">
+              <button class="selector-btn-middle">6</button>     
+            </li>
+            <li class="selector-item">
+              <button class="selector-btn-middle">7</button>     
+            </li>
+            <li class="selector-item">
+              <button class="selector-btn-middle">8</button>     
+            </li>
           </ul>
-          <button aria-label="Button forward" class="selector-btn selector-btn_forward">
+          <button class="selector-btn selector-btn_forward">
             <svg width="15" height="24" viewBox="0 0 15 24" xmlns="http://www.w3.org/2000/svg">
               <rect x="2.42139" y="0.300781" width="16.5512" height="3" rx="1.5" transform="rotate(45 2.42139 0.300781)" />
               <rect x="0.300049" y="21.5801" width="16.5512" height="3" rx="1.5" transform="rotate(-45 0.300049 21.5801)" />
@@ -141,79 +323,7 @@
         </div>
       </div>
     </main>
-    <div class="modal modal_close modal_register-js">
-      <div class="modal__content">
-        <form name="form-register" class="form form_modal">
-          <div class="form__row form__row_column">
-            <label class="form__label" for="form-email-register">Email <span class="form__label-star">*</span></label>
-            <input class="form__input form__input_register-js email-js" id="form-email-register" type="text" name="email">
-          </div>
-          <div class="form__row">
-            <div class="form__row-short form__row-short_2">
-              <label class="form__label form__label_2" for="form-name-register">Name <span class="form__label-star">*</span></label>
-              <input class="form__input name-js" id="form-name-register" type="text" name="name">
-            </div>
-            <div class="form__row-short">
-              <label class="form__label form__label_2" for="form-surname-register">Surname <span class="form__label-star">*</span></label>
-              <input class="form__input surname-js" id="form-surname-register" type="text" name="surname">
-            </div>
-          </div>
-          <div class="form__row">
-            <div class="form__row-short form__row-short_2">
-              <label class="form__label form__label_2" for="form-password-register">Password <span class="form__label-star">*</span></label>
-              <input class="form__input password-js" id="form-password-register" type="password" name="password">
-            </div>
-            <div class="form__row-short">
-              <label class="form__label form__label_2" for="form-password-repeat-register">Repeat password <span class="form__label-star">*</span></label>
-              <input class="form__input password-repeat-js" id="form-password-repeat-register" type="password" name="passwordRep">
-            </div>
-          </div>
-          <div class="form__row">
-            <div class="form__row-short form__row-short_2">
-              <label class="form__label form__label_2" for="form-location-register">Location <span class="form__label-star">*</span></label>
-              <input class="form__input location-js" id="form-location-register" type="text" name="location">
-            </div>
-            <div class="form__row-short">
-              <label class="form__label form__label_2" for="form-age-register">Age <span class="form__label-star">*</span></label>
-              <input class="form__input age-js" id="form-age-register" type="number" name="age">
-            </div>
-          </div>
-          <label class="form__checkbox-label">
-            <input class="form__checkbox hidden acceptbutton-js" type="checkbox" value="no" name="acceptbutton">
-            <span class="form__checkbox-indicator">Clicking on the button, you consent to the processing of your personal data.</span>
-          </label>
-          <button class="button form__submit-button button_modal button_modal-register" type="submit">Sign up</button>
-        </form>
-        <button aria-label="Button close" type="button" class="modal__close modal__close_register-js">
-          <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
-            <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" />
-            <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" />
-          </svg>
-        </button>
-      </div>
-    </div>
-    <div class="modal modal_close modal_sing-in-js">
-      <div class="modal__content">
-        <form name="form-sing-in" class="form form_modal form_modal-sing-in">
-          <div class="form__row form__row_column">
-            <label class="form__label" for="form-email-sing-in">Email <span class="form__label-star">*</span></label>
-            <input class="form__input form__input_sing-in-js email-js" id="form-email-sing-in" type="text" name="email">
-          </div>
-          <div class="form__row form__row_column">
-            <label class="form__label" for="form-password-sing-in">Password <span class="form__label-star">*</span></label>
-            <input class="form__input password-js" id="form-password-sing-in" type="password" name="password">
-          </div>
-          <button class="button form__submit-button form__submit-button_2 button_white button_modal-sing-in" type="submit">Log in</button>
-        </form>
-        <button aria-label="Button close" type="button" class="modal__close modal__close_sing-in-js">
-          <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
-            <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" />
-            <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" />
-          </svg>
-        </button>
-      </div>
-    </div>
-    <button aria-label="Button top" class="top-button">
+    <button class="top-button">
       <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="0.300781" y="12.5786" width="16.5512" height="3" rx="1.5" transform="rotate(-45 0.300781 12.5786)" fill="#070707"/>
         <rect x="21.5801" y="14.7" width="16.5512" height="3" rx="1.5" transform="rotate(-135 21.5801 14.7)" fill="#070707"/>
@@ -252,46 +362,46 @@
 </footer>
 <div class="modal modal_close modal_message-js">
 	<div class="modal__content">
-		<form name="form-message" class="form form_modal" >
+		<form class="form form_modal" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
 			<div class="form__row">
 				<div class="form__row-short form__row-short_2">
 					<label class="form__label form__label_2" for="form-name-send-message">What is your name? <span class="form__label-star">*</span></label>
-					<input class="form__input form__input_message-js name-js" id="form-name-send-message" type="text" name="name">
+					<input class="form__input form__input_message-js" id="form-name-send-message" type="text" name="name">
 				</div>
 				<div class="form__row-short">
 					<label class="form__label form__label_2" for="form-message-send-message">Message subject <span class="form__label-star">*</span></label>
-					<input class="form__input message-js" id="form-message-send-message" type="text" name="message">
+					<input class="form__input" id="form-message-send-message" type="text" name="message">
 				</div>
 			</div>
 			<div class="form__row">
 				<div class="form__row-short form__row-short_2">
 					<label class="form__label form__label_2" for="form-email-send-message">Your Email <span class="form__label-star">*</span></label>
-					<input class="form__input email-js" id="form-email-send-message" type="text" name="email">
+					<input class="form__input" id="form-email-send-message" type="email" name="email">
 				</div>
 				<div class="form__row-short">
 					<label class="form__label form__label_2" for="form-phone-send-message">Your mobile phone <span class="form__label-star">*</span></label>
-					<input class="form__input phone-js" id="form-phone-send-message" type="tel" name="phone">
+					<input class="form__input" id="form-phone-send-message" type="text" name="phone">
 				</div>
 			</div>
-			<div class="form__row form__row_column">
+			<div class="form__row">
 				<label class="form__label" for="form-discuss-send-message">What do you want to discuss with me?</label>
-				<textarea class="form__input form__input-message messagetext-js" id="form-discuss-send-message" name="messagetext"></textarea>
+				<textarea class="form__input form__input-message" id="form-discuss-send-message" name="message"></textarea>
 			</div>
 			<label class="form__checkbox-label">
-				<input class="form__checkbox hidden" type="checkbox" value="no" name="acceptbutton">
+				<input class="form__checkbox hidden" type="checkbox" value="accept" name="accept-button">
 				<span class="form__checkbox-indicator">Clicking on the button, you consent to the processing of your personal data.</span>
 			</label>
-			<button class="button form__submit-button button_modal button_modal-message" type="submit">Send</button>
+			<button class="button form__submit-button button_modal" type="submit">Send</button>
 		</form>
-		<button aria-label="Button close" type="button" class="modal__close modal__close_message-js">
+		<button type="button" class="modal__close modal__close_message-js">
 			<svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
 				<rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" />
 				<rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" />
 			</svg>
+			</svg>
 		</button>
 	</div>
 </div>
-    <div class="loader-container_js"></div>
     <script src="./index.js"></script>
   </body>
 </html>
