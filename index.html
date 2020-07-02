@@ -21,7 +21,7 @@
       <li><a class="header__nav-item header__hover" href="../../pages/blog/index.html">My blog</a></li>
       <li><button class="header__nav-item header__sing-in-button header__sing-in-button_js header__hover">Sign in</button></li>
       <li><button class="header__nav-item header__register-button header__register-button_js header__hover">Register</button></li>
-      <li><a class="header__nav-item header__profile_js header__hover hidden-block" href="../../pages/profile/index.html">My profile</a></li>
+      <li><a class="header__nav-item header__profile header__profile_js header__hover hidden-block" href="../../pages/profile/index.html">My profile</a></li>
       <li><button class="header__nav-item header__sing-out-button header__sing-out-button_js hidden-block header__hover">Sign out</button></li>
     </ul>
   </nav>
@@ -45,7 +45,7 @@
         <li><a class="mobile-header__nav-item header__hover" href="../../pages/blog/index.html">My blog</a></li>
         <li><button class="mobile-header__nav-item mobile-header__sing-in-button mobile-header__sing-in-button_js header__hover">Sign in</button></li>
         <li><button class="mobile-header__nav-item mobile-header__register-button mobile-header__register-button_js header__hover">Register</button></li>
-        <li><a class="mobile-header__nav-item mobile-header__profile_js header__hover hidden" href="../../pages/profile/index.html">My profile</a></li>
+        <li><a class="mobile-header__nav-item mobile-header__profile mobile-header__profile_js header__hover hidden" href="../../pages/profile/index.html">My profile</a></li>
         <li><button class="mobile-header__nav-item mobile-header__sing-out-button mobile-header__sing-out-button_js hidden header__hover">Sign out</button></li>
       </ul>
     </div>
@@ -139,7 +139,8 @@
             <p class="skills__item-title">HTML 5</p>
             <div class="skills__loader">
               <span class="skills__loader-progress">85%</span>
-              <div aria-label="HTML 5 progress" class="skills__loader-scale skills__loader-scale_html"></div>
+              <p class="hidden">HTML 5 progress</p>
+              <div class="skills__loader-scale skills__loader-scale_html"></div>
             </div>    
           </li>
           <li class="skills__item">
@@ -150,7 +151,8 @@
             <p class="skills__item-title">CSS/SCSS</p>
             <div class="skills__loader">
               <span class="skills__loader-progress">55%</span>
-              <div aria-label="CSS/SCSS progress" class="skills__loader-scale skills__loader-scale_css"></div>
+              <p class="hidden">CSS/SCSS progress</p>
+              <div class="skills__loader-scale skills__loader-scale_css"></div>
             </div>             
           </li>
           <li class="skills__item">
@@ -168,7 +170,8 @@
               <p class="skills__item-title">JavaScript</p>
               <div class="skills__loader">
                 <span class="skills__loader-progress">5% </span>
-                <div aria-label="JavaScript progress" class="skills__loader-scale skills__loader-scale_js"></div>
+                <p class="hidden">JavaScript progress</p>
+                <div class="skills__loader-scale skills__loader-scale_js"></div>
               </div>    
           </li>
           <li class="skills__item">
@@ -184,7 +187,8 @@
             <p class="skills__item-title">Git/GitHub</p>
             <div class="skills__loader">
               <span class="skills__loader-progress">15%</span>
-              <div aria-label="Git/GitHub progress" class="skills__loader-scale skills__loader-scale_git"></div>
+              <p class="hidden">Git/GitHub progress</p>
+              <div class="skills__loader-scale skills__loader-scale_git"></div>
             </div>              
           </li>
           <li class="skills__item">
@@ -198,7 +202,8 @@
               <p class="skills__item-title">Figma</p>
               <div class="skills__loader">
                 <span class="skills__loader-progress">80%</span>
-                <div aria-label="Figma progress" class="skills__loader-scale skills__loader-scale_figma"></div>
+                <p class="hidden">Figma progress</p>
+                <div class="skills__loader-scale skills__loader-scale_figma"></div>
               </div>          
           </li>
         </ul>
@@ -209,67 +214,67 @@
           <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <picture class="portfolio__img-box">
+                  <picture class="swiper__img-box">
                     <source srcset="../../static/images/Portfolio1-mobile.jpg, ../../static/images/Portfolio1-mobile@2.jpg 2x" media="(max-width: 700px)">
                     <source srcset="../../static/images/Portfolio1-tablet.jpg, ../../static/images/Portfolio1-tablet@2.jpg 2x" media="(max-width: 850px)">
                     <source srcset="../../static/images/Portfolio1.jpg, ../../static/images/Portfolio1@2.jpg 2x">
-                    <img class="portfolio__img" src="../../static/images/Portfolio1.jpg" width="1000" height="604" alt="Portfolio main page"/>
+                    <img class="swiper__img" src="../../static/images/Portfolio1.jpg" width="1000" height="604" alt="Portfolio main page"/>
                   </picture>
                 </div>
                 <div class="swiper-slide">
-                  <picture class="portfolio__img-box">
+                  <picture class="swiper__img-box">
                     <source srcset="../../static/images/Portfolio2-mobile.jpg, ../../static/images/Portfolio2-mobile@2.jpg 2x" media="(max-width: 700px)">
                     <source srcset="../../static/images/Portfolio2-tablet.jpg, ../../static/images/Portfolio2-tablet@2.jpg 2x" media="(max-width: 850px)">
                     <source srcset="../../static/images/Portfolio2.jpg, ../../static/images/Portfolio2@2.jpg 2x">
-                    <img class="portfolio__img" src="../../static/images/Portfolio2.jpg" width="1000" height="604" alt="Portfolio category products page"/>
+                    <img class="swiper__img" src="../../static/images/Portfolio2.jpg" width="1000" height="604" alt="Portfolio category products page"/>
                   </picture>
                 </div>
                 <div class="swiper-slide">
-                  <picture class="portfolio__img-box">
+                  <picture class="swiper__img-box">
                     <source srcset="../../static/images/Portfolio3-mobile.jpg, ../../static/images/Portfolio3-mobile@2.jpg 2x" media="(max-width: 700px)">
                     <source srcset="../../static/images/Portfolio3-tablet.jpg, ../../static/images/Portfolio3-tablet@2.jpg 2x" media="(max-width: 850px)">
                     <source srcset="../../static/images/Portfolio3.jpg, ../../static/images/Portfolio3@2.jpg 2x">
-                    <img class="portfolio__img" src="../../static/images/Portfolio3.jpg" width="1000" height="604" alt="Portfolio toys page"/>
+                    <img class="swiper__img" src="../../static/images/Portfolio3.jpg" width="1000" height="604" alt="Portfolio toys page"/>
                   </picture>
                 </div>
                 <div class="swiper-slide">
-                  <picture class="portfolio__img-box">
+                  <picture class="swiper__img-box">
                     <source srcset="../../static/images/Portfolio4-mobile.jpg, ../../static/images/Portfolio4-mobile@2.jpg 2x" media="(max-width: 700px)">
                     <source srcset="../../static/images/Portfolio4-tablet.jpg, ../../static/images/Portfolio4-tablet@2.jpg 2x" media="(max-width: 850px)">
                     <source srcset="../../static/images/Portfolio4.jpg, ../../static/images/Portfolio4@2.jpg 2x">
-                    <img class="portfolio__img" src="../../static/images/Portfolio4.jpg" width="1000" height="604" alt="Portfolio blog page"/>
+                    <img class="swiper__img" src="../../static/images/Portfolio4.jpg" width="1000" height="604" alt="Portfolio blog page"/>
                   </picture>
                 </div>
                 <div class="swiper-slide">
-                  <picture class="portfolio__img-box">
+                  <picture class="swiper__img-box">
                     <source srcset="../../static/images/Portfolio5-mobile.jpg, ../../static/images/Portfolio5-mobile@2.jpg 2x" media="(max-width: 700px)">
                     <source srcset="../../static/images/Portfolio5-tablet.jpg, ../../static/images/Portfolio5-tablet@2.jpg 2x" media="(max-width: 850px)">
                     <source srcset="../../static/images/Portfolio5.jpg, ../../static/images/Portfolio5@2.jpg 2x">
-                    <img class="portfolio__img" src="../../static/images/Portfolio5.jpg" width="1000" height="604" alt="Portfolio contact us page"/>
+                    <img class="swiper__img" src="../../static/images/Portfolio5.jpg" width="1000" height="604" alt="Portfolio contact us page"/>
                   </picture>
                 </div>
                 <div class="swiper-slide">
-                  <picture class="portfolio__img-box">
+                  <picture class="swiper__img-box">
                     <source srcset="../../static/images/Portfolio6-mobile.jpg, ../../static/images/Portfolio6-mobile@2.jpg 2x" media="(max-width: 700px)">
                     <source srcset="../../static/images/Portfolio6-tablet.jpg, ../../static/images/Portfolio6-tablet@2.jpg 2x" media="(max-width: 850px)">
                     <source srcset="../../static/images/Portfolio6.jpg, ../../static/images/Portfolio6@2.jpg 2x">
-                    <img class="portfolio__img" src="../../static/images/Portfolio6.jpg" width="1000" height="604" alt="Portfolio animation scene page"/>
+                    <img class="swiper__img" src="../../static/images/Portfolio6.jpg" width="1000" height="604" alt="Portfolio animation scene page"/>
                   </picture>
                 </div>
                 <div class="swiper-slide">
-                  <picture class="portfolio__img-box">
+                  <picture class="swiper__img-box">
                     <source srcset="../../static/images/Portfolio7-mobile.jpg, ../../static/images/Portfolio7-mobile@2.jpg 2x" media="(max-width: 700px)">
                     <source srcset="../../static/images/Portfolio7-tablet.jpg, ../../static/images/Portfolio7-tablet@2.jpg 2x" media="(max-width: 850px)">
                     <source srcset="../../static/images/Portfolio7.jpg, ../../static/images/Portfolio7@2.jpg 2x">
-                    <img class="portfolio__img" src="../../static/images/Portfolio7.jpg" width="1000" height="604" alt="Portfolio svg animation page"/>
+                    <img class="swiper__img" src="../../static/images/Portfolio7.jpg" width="1000" height="604" alt="Portfolio svg animation page"/>
                   </picture>
                 </div>
                 <div class="swiper-slide">
-                  <picture class="portfolio__img-box">
+                  <picture class="swiper__img-box">
                     <source srcset="../../static/images/Portfolio8-mobile.jpg, ../../static/images/Portfolio8-mobile@2.jpg 2x" media="(max-width: 700px)">
                     <source srcset="../../static/images/Portfolio8-tablet.jpg, ../../static/images/Portfolio8-tablet@2.jpg 2x" media="(max-width: 850px)">
                     <source srcset="../../static/images/Portfolio8.jpg, ../../static/images/Portfolio8@2.jpg 2x">
-                    <img class="portfolio__img" src="../../static/images/Portfolio8.jpg" width="1000" height="604" alt="Portfolio grid page"/>
+                    <img class="swiper__img" src="../../static/images/Portfolio8.jpg" width="1000" height="604" alt="Portfolio grid page"/>
                   </picture>
                 </div>
             </div>
@@ -285,9 +290,9 @@
                 <rect x="9" y="47.4802" width="29.9303" height="5.42502" rx="2.71251" transform="rotate(-45 9 47.4802)" />
               </svg>
             </button>
-            <div class="swiper-footer">
-              <a class="swiper-footer-link" target="_blank" href="https://fedchenkovyacheslav.github.io/project">Learning site for DL Academy courses</a>
-              <p class="swiper-footer-text">A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>
+            <div class="swiper__footer">
+              <a class="swiper__footer-link" target="_blank" href="https://fedchenkovyacheslav.github.io/project">Learning site for DL Academy courses</a>
+              <p class="swiper__footer-text">A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>
             </div>
         </div>
         </div>
@@ -399,7 +404,7 @@
 			</li>
 		</ul>
 		<p class="footer__text-bottom">Design by <a class="footer__text-link" href="https://directline.digital/vacancies/dl-academy/">DL Academy</a></p>
-		<p class="footer__text-bottom">Program code from Vyacheslav</a></p>
+		<p class="footer__text-bottom">Program code from Vyacheslav</p>
   </div>
 </footer>
 <div class="modal modal_close modal_message-js">
@@ -443,7 +448,7 @@
 		</button>
 	</div>
 </div>
-    <div class="loader-container_js"></div>
+    <div class="loader-container loader-container_js"></div>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="./index.js"></script>
   </body>

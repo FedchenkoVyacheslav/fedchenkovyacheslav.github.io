@@ -20,7 +20,7 @@
       <li><a class="header__nav-item header__hover" href="../../pages/blog/index.html">My blog</a></li>
       <li><button class="header__nav-item header__sing-in-button header__sing-in-button_js header__hover">Sign in</button></li>
       <li><button class="header__nav-item header__register-button header__register-button_js header__hover">Register</button></li>
-      <li><a class="header__nav-item header__profile_js header__active header__hover hidden-block" href="../../pages/profile/index.html">My profile</a></li>
+      <li><a class="header__nav-item header__profile header__profile_js header__active header__hover hidden-block" href="../../pages/profile/index.html">My profile</a></li>
       <li><button class="header__nav-item header__sing-out-button header__sing-out-button_js hidden-block header__hover">Sign out</button></li>
     </ul>
   </nav>
@@ -44,7 +44,7 @@
         <li><a class="mobile-header__nav-item header__hover" href="../../pages/blog/index.html">My blog</a></li>
         <li><button class="mobile-header__nav-item mobile-header__sing-in-button mobile-header__sing-in-button_js header__hover">Sign in</button></li>
         <li><button class="mobile-header__nav-item mobile-header__register-button mobile-header__register-button_js header__hover">Register</button></li>
-        <li><a class="mobile-header__nav-item mobile-header__profile_js mobile-header__nav-item_active header__hover hidden" href="../../pages/profile/index.html">My profile</a></li>
+        <li><a class="mobile-header__nav-item mobile-header__profile mobile-header__profile_js mobile-header__nav-item_active header__hover hidden" href="../../pages/profile/index.html">My profile</a></li>
         <li><button class="mobile-header__nav-item mobile-header__sing-out-button mobile-header__sing-out-button_js hidden header__hover">Sign out</button></li>
       </ul>
     </div>
@@ -53,36 +53,36 @@
     <main>
       <div class="container">
         <h1 class="title__site">My profile</h1>
-        <section class="profile">
+        <div class="profile">
           <div class="profile__content">
             <div class="profile__img-box">
               <div class="profile__img"></div>
             </div>
             <div class="profile__list-content">
               <ul class="profile__list list-point-none">
-                <li class="profile__list-item">
-                  <span class="profile__list-title">Name:</span>
-                  <span class="profile__list-text profile__name"></span>
+                <li class="profile__item">
+                  <span class="profile__title">Name:</span>
+                  <span class="profile__text profile__name"></span>
                 </li>
-                <li class="profile__list-item">
-                  <span class="profile__list-title">Surname:</span>
-                  <span class="profile__list-text profile__surname"></span>
+                <li class="profile__item">
+                  <span class="profile__title">Surname:</span>
+                  <span class="profile__text profile__surname"></span>
                 </li>
-                <li class="profile__list-item">
-                  <span class="profile__list-title">Email:</span>
-                  <span class="profile__list-text profile__email"></span>
+                <li class="profile__item">
+                  <span class="profile__title">Email:</span>
+                  <span class="profile__text profile__email"></span>
                 </li>
-                <li class="profile__list-item">
-                  <span class="profile__list-title">Password:</span>
-                  <span class="profile__list-text">****************</span>
+                <li class="profile__item">
+                  <span class="profile__title">Password:</span>
+                  <span class="profile__text">****************</span>
                 </li>
-                <li class="profile__list-item">
-                  <span class="profile__list-title">Location:</span>
-                  <span class="profile__list-text profile__location"></span>
+                <li class="profile__item">
+                  <span class="profile__title">Location:</span>
+                  <span class="profile__text profile__location"></span>
                 </li>
-                <li class="profile__list-item">
-                  <span class="profile__list-title">Age:</span>
-                  <span class="profile__list-text profile__age"></span>
+                <li class="profile__item">
+                  <span class="profile__title">Age:</span>
+                  <span class="profile__text profile__age"></span>
                 </li>
               </ul>
               <button class="button profile__button profile__button-password profile__button-password-js button_white" type="submit">Change password</button>
@@ -90,7 +90,7 @@
               <button class="button profile__button profile__button-delete profile__button-delete-js button_white" type="submit">Delete account</button>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </main>
     <div class="modal modal_close modal_editing-data-js">
@@ -182,7 +182,7 @@
         <rect x="21.5801" y="14.7" width="16.5512" height="3" rx="1.5" transform="rotate(-135 21.5801 14.7)" />
       </svg>                      
     </button>
-    <div class="loader-container_js"></div>
+    <div class="loader-container loader-container_js"></div>
     <script src="./index.js"></script>
   </body>
 </html>
