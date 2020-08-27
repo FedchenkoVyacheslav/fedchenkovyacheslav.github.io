@@ -835,8 +835,7 @@ textarea {
     width: 100%;
     height: auto;
     padding: 100px 64px;
-    padding-bottom: 100%;
-    z-index: 1; }
+    padding-bottom: 100%; }
   .mobile-header__logo {
     display: -ms-flexbox;
     display: flex;
