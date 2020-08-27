@@ -815,6 +815,7 @@ textarea {
     transform: rotate(-10deg); } }
 
 .mobile-header {
+  height:100%;
   position: fixed;
   z-index: 2;
   overflow: auto;
