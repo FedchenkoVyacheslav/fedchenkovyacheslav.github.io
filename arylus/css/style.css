@@ -1130,7 +1130,12 @@ textarea {
           margin-top: 20px; } }
       @media (min-width: 600px) {
         .footer__bottom-text:nth-child(2) {
-          margin-top: 30px; } }
+          margin-top: 30px; } 
+        .footer__bottom-text > a {
+          text-decoration: none;
+          color: #fff;
+        }
+        }
 
 .poster {
   position: relative;
