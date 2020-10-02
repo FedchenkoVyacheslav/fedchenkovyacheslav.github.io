@@ -1381,20 +1381,23 @@ textarea {
       margin-bottom: 35px; } }
 
 .instagram-sidecar,
-.instagram-image {
+.instagram-image,
+.instagram-video {
   height: auto;
-  -ms-flex: 0 0 auto;
-      flex: 0 0 auto;
-  width: calc(100% / 3); }
+  flex: 0 0 auto;
+  width: calc(100% / 3);
+  
   @media (min-width: 850px) {
-    .instagram-sidecar,
-    .instagram-image {
-      width: calc(100% / 6); } }
+    width: calc(100% / 6);
+  }
+}
 
 .instagram-sidecar img,
-.instagram-image img {
+.instagram-image img,
+.instagram-video img {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 .map {
   position: relative; }
